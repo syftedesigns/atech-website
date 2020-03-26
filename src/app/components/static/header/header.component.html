@@ -1,0 +1,100 @@
+<mat-toolbar [ngClass]="{'z-inditex': !parentMenu.menuIsOpen}" class="toolbar-background d-none d-md-block sticky">
+    <!-- menu -->
+    <header #stickyMenu>
+        <mat-toolbar-row>
+            <!-- logo -->
+            <a class="navbar-brand" [routerLink]="['/']">
+                <img class="offset-lg-2 offset-md-1 offset-xl-8" src="./assets/images/atech-logo.png" alt="atechjg-logo">
+            </a>
+            <!-- end logo-->
+            <span class="example-spacer"></span>
+            <!-- busqueda de catalogo -->
+            <form>
+                <div class="space-10"></div>
+                <mat-form-field style="position: relative; left: -20%;" appearance="fill" class="w-100 font-12">
+                    <mat-label class="Chivo-Regular">¿Qué estas buscando?</mat-label>
+                    <input matInput placeholder="">
+                    <mat-icon class="primary-color" matSuffix>search</mat-icon>
+                </mat-form-field>
+            </form>
+            <!-- Finalizar busqueda de catalogo-->
+            <!-- Desplegar menu -->
+            <button (click)="ToggleMenu();" mat-button>
+                <mat-icon class="primary-color"  aria-hidden="false" aria-label="button menu">menu</mat-icon>
+            </button>
+            <!-- fin menu -->
+        </mat-toolbar-row>
+    </header>
+    <!-- end menu -->
+</mat-toolbar>
+<!-- overlay menu -->
+<app-overlay></app-overlay>
+<!-- end overlay -->
+<!-- sticky menu -->
+<header style="display: none !important" class="d-none d-md-block" *ngIf="sticky && SticketBubble" [ngClass]="{'menu-sticky': sticky}">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm text-center">
+                <!-- ToggleMenu(true); -->
+                <figure>
+                    <button (click)="ToggleMenu(true)" mat-fab class="bg-sticky">
+                    <mat-icon class="material-icons">menu</mat-icon>
+                </button>
+                </figure>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end sticky -->
+<!-- menu mobile -->
+<mat-toolbar *ngIf="!sticky" class="toolbar-background d-md-none">
+    <header #stickyMenu>
+        <mat-toolbar-row>
+            <a class="navbar-brand" [routerLink]="['/']">
+                <img src="./assets/images/atech-logo.png" alt="atechjg-logo">
+            </a>
+            <span class="example-spacer"></span>
+            <button [matMenuTriggerFor]="menu" mat-button>
+                <mat-icon class="material-icons primary-color"  aria-hidden="false" aria-label="button menu">menu</mat-icon>
+            </button>
+        </mat-toolbar-row>
+    </header>
+</mat-toolbar>
+<!-- sticky mobile -->
+<header *ngIf="sticky" class="menu-sticky d-md-none">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <figure>
+                    <button [matMenuTriggerFor]="menu" mat-fab class="bg-sticky">
+                    <mat-icon class="material-icons">menu</mat-icon>
+                </button>
+                </figure>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end sticky mobile -->
+<mat-menu #menu="matMenu">
+    <button (click)="EventsBeforeNavigation();" [routerLink]="['/']" mat-menu-item>
+        <mat-icon class="material-icons blue-color" matPrefix>public</mat-icon>
+        <mat-label class="menu-mobile-label">Inicio</mat-label>
+    </button>
+    <button (click)="EventsBeforeNavigation();" [routerLink]="['/manufactura']" mat-menu-item>
+        <mat-icon class="material-icons blue-color" matPrefix>location_city</mat-icon>
+        <mat-label class="menu-mobile-label">Manufactura</mat-label>
+    </button>
+    <button (click)="EventsBeforeNavigation();" [routerLink]="['/logistica']" mat-menu-item>
+        <mat-icon class="material-icons blue-color" matPrefix>directions_boat</mat-icon>
+        <mat-label class="menu-mobile-label">Logística</mat-label>
+    </button>
+    <button (click)="EventsBeforeNavigation();" [routerLink]="['/innovacion']" mat-menu-item>
+        <mat-icon class="material-icons blue-color" matPrefix>emoji_events</mat-icon>
+        <mat-label class="menu-mobile-label">Innovación</mat-label>
+    </button>
+    <button (click)="EventsBeforeNavigation();" [routerLink]="['/catalogo']" mat-menu-item>
+        <mat-icon class="material-icons blue-color" matPrefix>burst_mode</mat-icon>
+        <mat-label class="menu-mobile-label">Catálogo</mat-label>
+    </button>
+</mat-menu>
+<!-- end menu mobile -->

@@ -1,0 +1,21 @@
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" (click)="menu.CloseNav('myNav');" class="closebtn no-hover">&times;</a>
+    <div class="overlay-content">
+        <!-- Logo -->
+        <figure>
+            <img src="./assets/images/atech-logo.png" alt="atechjg-logo">
+        </figure>
+        <div class="space-30"></div>
+        <!-- end logo -->
+        <a (click)="EventsBeforeNavigation();" [routerLink]="['/']">Inicio</a>
+        <a (click)="EventsBeforeNavigation();" [routerLink]="['/manufactura']">Manufactura</a>
+        <a (click)="EventsBeforeNavigation();" [routerLink]="['/logistica']">Logística</a>
+        <a (click)="EventsBeforeNavigation();" [routerLink]="['/innovacion']">Innovación</a>
+        <a (click)="EventsBeforeNavigation();" [routerLink]="['/catalogo']">Catálogo</a>
+        <div class="space-50"></div>
+        <figure>
+            <img src="./assets/images/atech-slogan-logo.png" alt="atechjg-logo-slogan">
+        </figure>
+        <mat-icon class="primary-color font-30">arrow_downward</mat-icon>
+    </div>
+</div>

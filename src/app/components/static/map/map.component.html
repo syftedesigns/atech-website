@@ -1,0 +1,141 @@
+<mgl-map [style]="'mapbox://styles/ingcarlose/ck83tt8dr2tze1is4vnqnyit1/draft'" [keyboard]="false" [doubleClickZoom]="false" [touchZoomRotate]="false" [dragRotate]="false" [scrollZoom]="false" [zoom]="[1.7]">
+    <!-- atech pointers -->
+    <ng-container>
+        <mgl-marker #BuenosAires [lngLat]="[-58.381592, -34.603722]">
+            <mat-icon style="z-index: 1000;" class="material-icons atech-marker">place</mat-icon>
+        </mgl-marker>
+        <mgl-popup [marker]="BuenosAires" [offset]="10" [anchor]="'left'">
+            <mat-card class=" w-100 popup-card">
+                <mat-card-content>
+                    <div class="row ">
+                        <div class="col-3">
+                            <mat-icon class="material-icons font-60 popup-title-colors">
+                                location_city
+                            </mat-icon>
+                        </div>
+                        <div class="col ">
+                            <h1 class="text-center popup-title-colors popup-title">
+                                Oficina Comercial
+                            </h1>
+                        </div>
+                    </div>
+                    <h3 class="popup-subheader ">Bs.As., Argentina</h3>
+                </mat-card-content>
+            </mat-card>
+        </mgl-popup>
+    </ng-container>
+    <ng-container>
+        <mgl-marker #Spain [lngLat]="[-2.173404, 41.385063]">
+            <mat-icon class="material-icons atech-marker">place</mat-icon>
+        </mgl-marker>
+        <mgl-popup [marker]="Spain">
+            <mat-card class=" w-100 popup-card">
+                <mat-card-content>
+                    <div class="row">
+                        <div class="col-3">
+                            <mat-icon class="material-icons font-60 popup-title-colors">
+                                emoji_objects
+                            </mat-icon>
+                        </div>
+                        <div class="col ">
+                            <h1 class="text-center popup-title-colors popup-title">
+                                Dpto. de Innovación
+                            </h1>
+                        </div>
+                    </div>
+                    <h3 class="popup-subheader">Barcelona, España</h3>
+                </mat-card-content>
+            </mat-card>
+        </mgl-popup>
+    </ng-container>
+    <ng-container>
+        <mgl-marker #China [lngLat]="[114.057861, 22.543097]">
+            <mat-icon style="margin-top: -0.8em !important;" class="material-icons atech-marker">place</mat-icon>
+        </mgl-marker>
+        <mgl-popup [marker]="China">
+            <mat-card class=" w-100 popup-card ">
+                <mat-card-content>
+                    <div class="row ">
+                        <div class="col-3 ">
+                            <mat-icon class="material-icons font-60 popup-title-colors ">
+                                home_work
+                            </mat-icon>
+                        </div>
+                        <div class="col ">
+                            <h1 class="text-center popup-title-colors popup-title ">
+                                Casa Matriz
+                            </h1>
+                        </div>
+                    </div>
+                    <h3 class="popup-subheader">Shenzhen, China</h3>
+                </mat-card-content>
+            </mat-card>
+        </mgl-popup>
+    </ng-container>
+    <!-- end atech pointers -->
+    <!-- atech patner country -->
+    <ng-container>
+        <mgl-marker [lngLat]="[-51.925282, -14.235004]">
+            <mat-card class="w-25 flag-cards offset-2">
+                <mat-card-header>
+                    <div mat-card-avatar class="brazil-flag border-flag"></div>
+                </mat-card-header>
+            </mat-card>
+        </mgl-marker>
+    </ng-container>
+    <ng-container>
+        <mgl-marker [lngLat]="[-74.297333, 4.570868]">
+            <mat-card class="w-25 flag-cards offset-2">
+                <mat-card-header>
+                    <div mat-card-avatar class="colombia-flag border-flag"></div>
+                </mat-card-header>
+            </mat-card>
+        </mgl-marker>
+    </ng-container>
+    <ng-container>
+        <mgl-marker [lngLat]="[-75.015152, -9.189967]">
+            <mat-card class="w-25 flag-cards offset-2">
+                <mat-card-header>
+                    <div mat-card-avatar class="peru-flag border-flag"></div>
+                </mat-card-header>
+            </mat-card>
+        </mgl-marker>
+    </ng-container>
+    <ng-container>
+        <mgl-marker [lngLat]="[-102.552788, 23.634501]">
+            <mat-card class="w-25 flag-cards offset-2">
+                <mat-card-header>
+                    <div mat-card-avatar class="mexico-flag border-flag"></div>
+                </mat-card-header>
+            </mat-card>
+        </mgl-marker>
+    </ng-container>
+    <ng-container>
+        <mgl-marker [lngLat]="[-80.782127, 8.537981]">
+            <mat-card class="w-25 flag-cards offset-1">
+                <mat-card-header>
+                    <div mat-card-avatar class="panama-flag border-flag"></div>
+                </mat-card-header>
+            </mat-card>
+        </mgl-marker>
+    </ng-container>
+    <ng-container>
+        <mgl-marker [lngLat]="[-55.765835, -32.522778]">
+            <mat-card style="width: 0px !important;" class="w-25 flag-cards offset-5">
+                <mat-card-header>
+                    <div mat-card-avatar class="uruguay-flag border-flag"></div>
+                </mat-card-header>
+            </mat-card>
+        </mgl-marker>
+    </ng-container>
+    <ng-container>
+        <mgl-marker [lngLat]="[-71.542969, -35.675148]">
+            <mat-card style="width: 0px !important; margin-left: -3.5em;" class="w-25 flag-cards">
+                <mat-card-header>
+                    <div mat-card-avatar class="chile-flag border-flag"></div>
+                </mat-card-header>
+            </mat-card>
+        </mgl-marker>
+    </ng-container>
+    <!-- end atech patner country -->
+</mgl-map>

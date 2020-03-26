@@ -1,0 +1,54 @@
+.case-title {
+    color: #056DFF;
+    font-size: 22px;
+    font-family: 'Chivo-Regular', serif;
+    font-weight: bold;
+}
+
+.case-text {
+    color: #5B5B5C;
+    font-size: 18px;
+    font-family: 'Chivo-Regular', Arial;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+mat-card {
+    -webkit-box-shadow: 0 6px 11px 0 rgba(37, 58, 103, 0.3) !important;
+    box-shadow: 0 6px 11px 0 rgba(37, 58, 103, 0.3) !important;
+}
+
+.text-atech-num {
+    font-family: 'Chivo-Light', serif !important;
+    color: #056DFF;
+    font-weight: bold;
+    padding: 10px
+}
+
+.spacer {
+    border: 2px solid #056DFF;
+    width: 3%;
+    text-align: center;
+    position: relative;
+    left: 50%;
+}
+
+.case-end-footer {
+    font-size: 24px;
+    font-family: 'Chivo-Regular', Arial;
+    text-align: center;
+    line-height: 1.4;
+    padding: 10px;
+    color: #056DFF;
+    font-weight: 540;
+}
+
+@media only screen and (max-width: 480px) {
+    .spacer {
+        border: 2px solid #056DFF;
+        width: 10%;
+        text-align: center;
+        position: relative;
+        left: 45%;
+    }
+}

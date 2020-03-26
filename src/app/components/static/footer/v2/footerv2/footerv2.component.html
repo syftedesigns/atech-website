@@ -1,0 +1,106 @@
+<section class="bg-footer">
+    <div class="main">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="space-80"></div>
+                <figure style="margin-left: 1em;">
+                    <a [routerLink]="['/']" title="Inicio">
+                        <img src="./assets/images/atech_footer_logo.png" alt="atech-logo">
+                    </a>
+                </figure>
+                <div class="space-10"></div>
+                <div class="row">
+                    <div class="col-sm">
+                        <mat-nav-list role="navigation">
+                            <div mat-subheader>
+                                <mat-label class="footer-list-title">SITIO</mat-label>
+                            </div>
+                            <a aria-label="Navegar a Catálogo" mat-list-item [routerLink]="['/catalogo']">
+                                Catálogo
+                            </a>
+                            <a aria-label="Navegar a Manufactura" mat-list-item [routerLink]="['/manufactura']">
+                                Manufactura
+                            </a>
+                            <a aria-label="Navegar a Logística" mat-list-item [routerLink]="['/logistica']">
+                                Logística
+                            </a>
+                            <a aria-label="Navegar a Innovación" mat-list-item [routerLink]="['/innovacion']">
+                                Innovación
+                            </a>
+                        </mat-nav-list>
+                    </div>
+                    <div class="col-sm">
+                        <mat-nav-list role="navigation">
+                            <div mat-subheader>
+                                <mat-label class="footer-list-title">CONTACTO</mat-label>
+                            </div>
+                            <a href="mailto:sales@atechjg.com" target="_blank" mat-list-item>
+                                sales@atechjg.com
+                            </a>
+                            <a class="d-none d-lg-block" href="#" onclick="return false;" mat-list-item>
+                                SHE - NO.90 Fuqian Road 
+                            </a>
+                            <a class="d-none d-lg-block" href="#" onclick="return false;" mat-list-item>
+                                BUE - Charcas 3145
+                            </a>
+                            <a class="d-none d-lg-block" href="#" onclick="return false;" mat-list-item>
+                                BCN - C/ d’en Robador 35-37 
+                            </a>
+                            <address class="d-lg-none">
+                                SHE - NO.90 Fuqian Road <br> 
+                                BUE - Charcas 3145 <br>
+                                BCN - C/ d’en Robador 35-37 
+                            </address>
+                        </mat-nav-list>
+                    </div>
+                    <div class="col-sm area-hidden">b</div>
+                    <div class="col-sm col-md-12 col-lg">
+                        <div class="space-30 d-lg-none"></div>
+                        <!-- newsletter -->
+                        <form>
+                            <h1 class="newsletter-title">
+                                ¡Sigamos en contacto! ¿Interesado en recibir ofertas, promociones y novedades?
+                            </h1>
+                            <p>
+                                <mat-form-field class="w-100" appearance="outline">
+                                    <mat-label class="text-light form-label">Correo electrónico</mat-label>
+                                    <input type="email" name="email" required matInput>
+                                </mat-form-field>
+                            </p>
+                            <button type="submit" mat-raised-button class="btn-block w-75 btn-touch">
+                                SUSCRIBIRME
+                            </button>
+                        </form>
+                        <!-- end newsletter -->
+                    </div>
+                </div>
+                <!-- footer end -->
+                <footer>
+                    <div class="space-50"></div>
+                    <mat-divider class="bg-white"></mat-divider>
+                    <div class="space-50"></div>
+                    <figure>
+                        <img src="./assets/images/atech-slogan.png" alt="atech-slogan">
+                    </figure>
+                    <div class="row">
+                        <div class="col-sm">
+                            <h3 style="color: white" class="copyright-text">
+                                <span>All Rights Reserved by AtechJG © 2020 | Development by</span>
+                                <a class="developer_link" target="_blank" href="https://syftedesigns.com">
+                                    SyfteDesigns
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="col-sm text-right">
+                            <a class="policy-links" href="#" target="_blank" onclick="return false">Sitemap</a>&nbsp;<span class="separator">|</span>&nbsp;
+                            <a class="policy-links" href="#" target="_blank" onclick="return false">Privacy policy</a>&nbsp;<span class="separator">|</span>&nbsp;
+                            <a class="policy-links" href="#" target="_blank" onclick="return false">Terms & conditions</a>
+                        </div>
+                    </div>
+                    <div class="space-5"></div>
+                </footer>
+                <!-- end footer end -->
+            </div>
+        </div>
+    </div>
+</section>

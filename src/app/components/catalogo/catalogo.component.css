@@ -1,0 +1,28 @@
+.bg-catalogo {
+    background-image: url(../../../assets/images/atech-catalogo.jpg);
+    background-size: cover;
+}
+
+.bg-color-catalogo {
+    background-color: #5B5B5C;
+}
+
+.title-primary {
+    font-size: 28px;
+    font-family: 'Chivo-Regular';
+    color: white
+}
+
+.title-secondary {
+    font-size: 52px;
+    font-family: 'Chivo-Regular';
+    color: white;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.area-hidden {
+    opacity: 0;
+    overflow: hidden;
+    z-index: -1;
+}

@@ -1,0 +1,56 @@
+.example-icon {
+    padding: 0 14px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.toolbar-background {
+    background-color: #ffffff !important;
+}
+
+.sticky {
+    position: fixed;
+}
+
+.menu-sticky {
+    position: fixed;
+    top: 0;
+    margin-top: 1%;
+    overflow: hidden;
+    float: right;
+    right: 0;
+    z-index: 10;
+}
+
+.dot {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    /*-webkit-animation: jackInTheBox 0.5s;
+    animation: jackInTheBox 0.5s;*/
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.bg-sticky {
+    background-color: #253A67;
+}
+
+.menu-mobile-label {
+    font-size: 14px;
+    font-family: 'Chivo-Regular', Arial, Helvetica, sans-serif;
+    color: #5B5B5C
+}
+
+.blue-color {
+    color: #056DFF
+}
+
+.menu-mobile-active {
+    background-color: rgba(228, 228, 228, 0.5);
+}

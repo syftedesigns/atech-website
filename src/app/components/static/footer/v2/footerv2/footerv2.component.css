@@ -1,0 +1,102 @@
+.bg-footer {
+    background-color: #253A67;
+}
+
+.footer-list-title {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Chivo-Regular', serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+a {
+    color: #ffffff !important;
+    font-size: 22px;
+    line-height: 0;
+    font-family: 'Chivo-Light', Arial;
+    font-weight: 580;
+    margin-top: -1em;
+}
+
+.newsletter-title {
+    color: #ffffff;
+    font-family: 'Chivo-Light', Arial;
+    font-size: 24px;
+    text-align: justify;
+}
+
+input {
+    color: white !important;
+    font-family: 'Chivo-Light', serif;
+    font-size: 20px;
+}
+
+input::placeholder {
+    color: white !important;
+    font-family: 'Chivo-Light', serif;
+    font-size: 20px;
+}
+
+.btn-touch {
+    background-color: transparent;
+    color: #01FF85;
+    border: 1px solid #01FF85;
+    font-family: 'Chivo-Bold', serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 6px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-top: -0.5em;
+}
+
+.btn-touch:hover {
+    background-color: #ffffff;
+    color: #253A67;
+    border: 1px solid #253A67;
+}
+
+.area-hidden {
+    opacity: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.copyrigh-text {
+    color: #ffffff;
+    font-weight: lighter;
+    font-family: 'Chivo-Regular', Arial;
+    font-size: 12px;
+}
+
+.developer_link {
+    font-size: 14px;
+    font-family: 'Chivo-Bold', Arial;
+}
+
+.policy-links {
+    font-size: 14px;
+    font-family: 'Chivo-Light', Arial;
+}
+
+.policy-links:hover {
+    font-weight: bold;
+}
+
+address {
+    color: #ffffff;
+    font-weight: lighter;
+    font-family: 'Chivo-Regular', Arial;
+    font-size: 12px;
+    margin-left: 1.5em;
+}
+
+.separator {
+    color: white;
+    font-size: 16px;
+    font-family: 'Chivo-Light' Arial;
+    font-weight: lighter;
+}

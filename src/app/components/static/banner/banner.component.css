@@ -1,0 +1,60 @@
+.testimonial-title {
+    font-size: 38px !important;
+    font-family: 'Chivo-Regular', serif;
+    line-height: 1.4;
+    font-weight: bold;
+    text-align: center;
+}
+
+.arrow-left {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    margin-left: 1.5em;
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: lighter;
+}
+
+.arrow-left:hover {
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    color: #056DFF
+}
+
+.arrow-position-left {
+    position: absolute;
+    left: 0;
+}
+
+.arrow-position-right {
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 1200px) {
+    .p-80 {
+        padding: 100px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .p-80 {
+        padding: 40px;
+    }
+}
+
+@media only screen and (min-width: 485px) and (max-width: 768px) {
+    .p-80 {
+        padding: 80px;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+    .p-80 {
+        padding: 100px;
+    }
+}

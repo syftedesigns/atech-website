@@ -1,0 +1,80 @@
+.popup-card {
+    border: 0px !important;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.popup-title-colors {
+    color: #1249cf
+}
+
+.popup-title {
+    font-family: 'Roboto-Bold', serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.popup-subheader {
+    text-align: center;
+    color: #5B5B5C;
+    font-family: 'Roboto-Light', serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.atech-marker {
+    color: #01ff85;
+    font-size: 60px;
+    margin-left: -0.8em;
+    cursor: pointer;
+}
+
+.flag-cards {
+    background-color: transparent;
+    border: 0px;
+    box-shadow: none;
+}
+
+.brazil-flag {
+    background-image: url(../../../../assets/images/country/brazil-flag.png);
+    background-size: cover;
+}
+
+.colombia-flag {
+    background-image: url(../../../../assets/images/country/colombia-flag.png);
+    background-size: cover;
+}
+
+.uruguay-flag {
+    background-image: url(../../../../assets/images/country/uruguay-flag.png);
+    background-size: cover;
+}
+
+.peru-flag {
+    background-image: url(../../../../assets/images/country/peru-flag.png);
+    background-size: cover;
+}
+
+.argentina-flag {
+    background-image: url(../../../../assets/images/country/argentina-flag.png);
+    background-size: cover;
+}
+
+.chile-flag {
+    background-image: url(../../../../assets/images/country/chile-flag.png);
+    background-size: cover;
+}
+
+.mexico-flag {
+    background-image: url(../../../../assets/images/country/mexico-flag.png);
+    background-size: cover;
+}
+
+.panama-flag {
+    background-image: url(../../../../assets/images/country/panama-flag.png);
+    background-size: cover;
+}
+
+.border-flag {
+    border: 1px solid #1249cf
+}

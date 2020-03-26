@@ -1,0 +1,97 @@
+.title-primary {
+    font-size: 28px;
+    font-family: 'Chivo-Regular';
+    color: white
+}
+
+.title-secondary {
+    font-size: 52px;
+    font-family: 'Chivo-Regular';
+    color: white;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.bg-innovacion {
+    background-image: url(../../../assets/images/atech-innovacion.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.case-title {
+    color: #056DFF;
+    font-size: 28px;
+    font-family: 'Chivo-Regular', serif;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.case-text {
+    color: #5B5B5C;
+    font-size: 18px;
+    font-family: 'Chivo-Regular', Arial;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.atech-line-item {
+    color: #5B5B5C;
+    font-size: 18px !important;
+    font-family: 'Chivo-Regular', Arial;
+    text-align: justify;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.text-atech-num {
+    font-family: 'Chivo-Light', serif !important;
+    color: #056DFF;
+    font-weight: bold;
+    padding: 10px
+}
+
+.spacer {
+    border: 2px solid #056DFF;
+    width: 3%;
+    text-align: center;
+    position: relative;
+    left: 50%;
+}
+
+.case-end-footer {
+    font-size: 24px;
+    font-family: 'Chivo-Regular', Arial;
+    text-align: center;
+    line-height: 1.4;
+    padding: 10px;
+    color: #056DFF;
+    font-weight: 540;
+}
+
+mat-list-item {
+    margin-top: -1em !important;
+}
+
+.bg-testimonial {
+    background: #36d1dc;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #056DFF, #06A1FE);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #056DFF, #06A1FE);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card-theme {
+    -webkit-box-shadow: 0 6px 11px 0 rgba(37, 58, 103, 0.3);
+    box-shadow: 0 6px 11px 0 rgba(37, 58, 103, 0.3);
+}
+
+@media only screen and (max-width: 480px) {
+    .case-text {
+        color: #5B5B5C;
+        font-size: 16px;
+        font-family: 'Chivo-Regular', Arial;
+        text-align: justify;
+        line-height: 1.4;
+    }
+}

@@ -1,0 +1,13 @@
+.breadcrumb-item {
+    font-size: 14px;
+    font-family: 'Chivo-Regular';
+    font-weight: bold;
+}
+
+a {
+    color: #5B5B5C
+}
+
+.active {
+    color: #06A1FE !important
+}

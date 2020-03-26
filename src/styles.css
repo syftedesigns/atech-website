@@ -1,1 +1,705 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    /*font-family: Roboto, "Helvetica Neue", sans-serif;*/
+}
+
+
+/* Chivo fonts */
+
+@font-face {
+    font-family: 'Chivo-Regular';
+    src: url('./assets/fonts/Chivo-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Chivo-Black';
+    src: url('./assets/fonts/Chivo-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Chivo-BlackItalic';
+    src: url('./assets/fonts/Chivo-BlackItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Chivo-Bold';
+    src: url('./assets/fonts/Chivo-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Chivo-BoldItalic';
+    src: url('./assets/fonts/Chivo-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Chivo-Italic';
+    src: url('./assets/fonts/Chivo-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Chivo-Light';
+    src: url('./assets/fonts/Chivo-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Chivo-LightItalic';
+    src: url('./assets/fonts/Chivo-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('./assets/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url('./assets/fonts/Roboto-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-ThinItalic';
+    src: url('./assets/fonts/Roboto-ThinItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-MediumItalic';
+    src: url('./assets/fonts/Roboto-MediumItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('./assets/fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-LightItalic';
+    src: url('./assets/fonts/Roboto-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('./assets/fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Italic';
+    src: url('./assets/fonts/Roboto-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-BoldItalic';
+    src: url('./assets/fonts/Roboto-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('./assets/fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url('./assets/fonts/Roboto-Black.ttf');
+}
+
+.Chivo-Regular {
+    font-family: 'Chivo-Regular', Geneva, Tahoma, sans-serif;
+}
+
+.Chivo-Black {
+    font-family: 'Chivo-Black', Geneva, Tahoma, sans-serif;
+}
+
+.Chivo-BlackItalic {
+    font-family: 'Chivo-BlackItalic', Geneva, Tahoma, sans-serif;
+}
+
+.Chivo-Bold {
+    font-family: 'Chivo-Bold', Geneva, Tahoma, sans-serif;
+}
+
+.Chivo-BoldItalic {
+    font-family: 'Chivo-BoldItalic', Geneva, Tahoma, sans-serif;
+}
+
+.Chivo-Italic {
+    font-family: 'Chivo-Italic', Geneva, Tahoma, sans-serif;
+}
+
+.Chivo-Light {
+    font-family: 'Chivo-Light', Geneva, Tahoma, sans-serif;
+}
+
+.Chivo-LightItalic {
+    font-family: 'Chivo-LightItalic', Geneva, Tahoma, sans-serif;
+}
+
+
+/* Font sizes default */
+
+.font-18 {
+    font-size: 18px !important;
+}
+
+.font-22 {
+    font-size: 22px !important;
+}
+
+.font-12 {
+    font-size: 12px !important;
+}
+
+.font-17 {
+    font-size: 17px !important;
+}
+
+.font-20 {
+    font-size: 20px !important;
+}
+
+.font-25 {
+    font-size: 25px !important;
+}
+
+.font-28 {
+    font-size: 28px !important;
+}
+
+.font-30 {
+    font-size: 30px !important;
+}
+
+.font-24 {
+    font-size: 24px !important;
+}
+
+.font-16 {
+    font-size: 16px !important;
+}
+
+.font-14 {
+    font-size: 14px !important;
+}
+
+.font-60 {
+    font-size: 60px !important;
+}
+
+.font-69 {
+    font-size: 69px !important;
+}
+
+.font-55 {
+    font-size: 55px !important;
+}
+
+.font-50 {
+    font-size: 50px !important;
+}
+
+.font-45 {
+    font-size: 45px !important;
+}
+
+.font-65 {
+    font-size: 65px !important;
+}
+
+.font-70 {
+    font-size: 70px !important;
+}
+
+.font-71 {
+    font-size: 71px !important;
+}
+
+.font-30 {
+    font-size: 30px !important;
+}
+
+.font-36 {
+    font-size: 36px !important;
+}
+
+.font-37 {
+    font-size: 37px !important;
+}
+
+.font-38 {
+    font-size: 38px !important;
+}
+
+.font-32 {
+    font-size: 32px !important;
+}
+
+.font-132 {
+    font-size: 132px !important;
+}
+
+.font-127 {
+    font-size: 127px !important;
+}
+
+.font-153 {
+    font-size: 153px !important;
+}
+
+.font-100 {
+    font-size: 100px !important;
+}
+
+
+/* Separators */
+
+.space-5 {
+    height: 5px;
+}
+
+.space-10 {
+    height: 10px;
+}
+
+.space-15 {
+    height: 15px;
+}
+
+.space-20 {
+    height: 20px;
+}
+
+.space-25 {
+    height: 25px;
+}
+
+.space-30 {
+    height: 30px;
+}
+
+.space-35 {
+    height: 35px;
+}
+
+.space-40 {
+    height: 40px;
+}
+
+.space-45 {
+    height: 45px;
+}
+
+.space-50 {
+    height: 50px;
+}
+
+.space-55 {
+    height: 55px;
+}
+
+.space-60 {
+    height: 60px;
+}
+
+.space-65 {
+    height: 65px;
+}
+
+.space-70 {
+    height: 70px;
+}
+
+.space-75 {
+    height: 75px;
+}
+
+.space-80 {
+    height: 80px;
+}
+
+.space-85 {
+    height: 85px;
+}
+
+.space-90 {
+    height: 90px;
+}
+
+.space-95 {
+    height: 95px;
+}
+
+.space-100 {
+    height: 100px;
+}
+
+.space-105 {
+    height: 105px;
+}
+
+.space-110 {
+    height: 110px;
+}
+
+.space-115 {
+    height: 115px;
+}
+
+.space-120 {
+    height: 120px;
+}
+
+.space-125 {
+    height: 125px;
+}
+
+.space-130 {
+    height: 130px;
+}
+
+.space-135 {
+    height: 135px;
+}
+
+.space-140 {
+    height: 140px;
+}
+
+.space-145 {
+    height: 145px;
+}
+
+.space-150 {
+    height: 150px;
+}
+
+.space-155 {
+    height: 155px;
+}
+
+.space-160 {
+    height: 160px;
+}
+
+.space-165 {
+    height: 165px;
+}
+
+.space-170 {
+    height: 170px;
+}
+
+.space-175 {
+    height: 175px;
+}
+
+.space-180 {
+    height: 180px;
+}
+
+.space-185 {
+    height: 185px;
+}
+
+.space-190 {
+    height: 190px;
+}
+
+.space-195 {
+    height: 195px;
+}
+
+.space-200 {
+    height: 200px;
+}
+
+.col-xs-offset-right-12 {
+    margin-right: 100%;
+}
+
+.col-xs-offset-right-11 {
+    margin-right: 91.66666667%;
+}
+
+.col-xs-offset-right-10 {
+    margin-right: 83.33333333%;
+}
+
+.col-xs-offset-right-9 {
+    margin-right: 75%;
+}
+
+.col-xs-offset-right-8 {
+    margin-right: 66.66666667%;
+}
+
+.col-xs-offset-right-7 {
+    margin-right: 58.33333333%;
+}
+
+.col-xs-offset-right-6 {
+    margin-right: 50%;
+}
+
+.col-xs-offset-right-5 {
+    margin-right: 41.66666667%;
+}
+
+.col-xs-offset-right-4 {
+    margin-right: 33.33333333%;
+}
+
+.col-xs-offset-right-3 {
+    margin-right: 25%;
+}
+
+.col-xs-offset-right-2 {
+    margin-right: 16.66666667%;
+}
+
+.col-xs-offset-right-1 {
+    margin-right: 8.33333333%;
+}
+
+.col-xs-offset-right-0 {
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    .col-sm-offset-right-12 {
+        margin-right: 100%;
+    }
+    .col-sm-offset-right-11 {
+        margin-right: 91.66666667%;
+    }
+    .col-sm-offset-right-10 {
+        margin-right: 83.33333333%;
+    }
+    .col-sm-offset-right-9 {
+        margin-right: 75%;
+    }
+    .col-sm-offset-right-8 {
+        margin-right: 66.66666667%;
+    }
+    .col-sm-offset-right-7 {
+        margin-right: 58.33333333%;
+    }
+    .col-sm-offset-right-6 {
+        margin-right: 50%;
+    }
+    .col-sm-offset-right-5 {
+        margin-right: 41.66666667%;
+    }
+    .col-sm-offset-right-4 {
+        margin-right: 33.33333333%;
+    }
+    .col-sm-offset-right-3 {
+        margin-right: 25%;
+    }
+    .col-sm-offset-right-2 {
+        margin-right: 16.66666667%;
+    }
+    .col-sm-offset-right-1 {
+        margin-right: 8.33333333%;
+    }
+    .col-sm-offset-right-0 {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-offset-right-12 {
+        margin-right: 100%;
+    }
+    .col-md-offset-right-11 {
+        margin-right: 91.66666667%;
+    }
+    .col-md-offset-right-10 {
+        margin-right: 83.33333333%;
+    }
+    .col-md-offset-right-9 {
+        margin-right: 75%;
+    }
+    .col-md-offset-right-8 {
+        margin-right: 66.66666667%;
+    }
+    .col-md-offset-right-7 {
+        margin-right: 58.33333333%;
+    }
+    .col-md-offset-right-6 {
+        margin-right: 50%;
+    }
+    .col-md-offset-right-5 {
+        margin-right: 41.66666667%;
+    }
+    .col-md-offset-right-4 {
+        margin-right: 33.33333333%;
+    }
+    .col-md-offset-right-3 {
+        margin-right: 25%;
+    }
+    .col-md-offset-right-2 {
+        margin-right: 16.66666667%;
+    }
+    .col-md-offset-right-1 {
+        margin-right: 8.33333333%;
+    }
+    .col-md-offset-right-0 {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-offset-right-12 {
+        margin-right: 100%;
+    }
+    .col-lg-offset-right-11 {
+        margin-right: 91.66666667%;
+    }
+    .col-lg-offset-right-10 {
+        margin-right: 83.33333333%;
+    }
+    .col-lg-offset-right-9 {
+        margin-right: 75%;
+    }
+    .col-lg-offset-right-8 {
+        margin-right: 66.66666667%;
+    }
+    .col-lg-offset-right-7 {
+        margin-right: 58.33333333%;
+    }
+    .col-lg-offset-right-6 {
+        margin-right: 50%;
+    }
+    .col-lg-offset-right-5 {
+        margin-right: 41.66666667%;
+    }
+    .col-lg-offset-right-4 {
+        margin-right: 33.33333333%;
+    }
+    .col-lg-offset-right-3 {
+        margin-right: 25%;
+    }
+    .col-lg-offset-right-2 {
+        margin-right: 16.66666667%;
+    }
+    .col-lg-offset-right-1 {
+        margin-right: 8.33333333%;
+    }
+    .col-lg-offset-right-0 {
+        margin-right: 0;
+    }
+}
+
+
+/* Customer web css */
+
+.primary-color {
+    color: #056DFF
+}
+
+.hover-color {
+    color: #01FF85
+}
+
+.secondary-color {
+    color: #06A1FE
+}
+
+.thirt-color {
+    color: #253A67
+}
+
+.dark-color {
+    color: #5B5B5C
+}
+
+.mat-step-icon {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.mat-step-icon-selected {
+    background-color: #ffffff !important;
+    color: #056DFF !important;
+    border-color: #056DFF !important;
+    font-size: 32px;
+    font-family: 'Chivo-Black', serif;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 30px;
+    margin-left: -0.6em;
+}
+
+.mat-step-icon-state-number {
+    background-color: #046eff;
+    color: #ffffff;
+    border-color: #056DFF !important;
+    font-size: 32px;
+    font-family: 'Chivo-Black', serif;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 30px;
+    margin-left: -0.6em;
+}
+
+
+/*Beta clases */
+
+.mat-step-header .mat-step-icon {
+    background-color: #046eff;
+}
+
+.mat-step-label {
+    overflow: visible !important;
+}
+
+.mat-step-header {
+    overflow: visible !important;
+}
+
+.mat-stepper-vertical-line {}
+
+mgl-map {
+    width: 100vw;
+    height: 50vh;
+}
+
+.mapboxgl-popup {
+    max-width: 28vh !important;
+}
+
+.mapboxgl-popup-close-button {
+    color: #1249cf !important;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 0.25em;
+    z-index: 1000;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+    color: white;
+}
+
+
+/* Font color */
+
+input.mat-input-element {
+    color: white;
+}
+
+.z-inditex {
+    z-index: 1000 !important;
+}
+
+.z-non-inditex {
+    z-index: -1 !important;
+}
+
+
+/* end beta clases */

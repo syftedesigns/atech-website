@@ -1,0 +1,111 @@
+.spacer {
+    border: 2px solid #ffffff;
+    width: 3%;
+    text-align: center;
+    position: relative;
+    left: 49.55%;
+}
+
+.footerv1-title {
+    font-size: 55px;
+    color: #ffffff;
+    font-family: 'Chivo-Bold', serif;
+    font-weight: bold;
+}
+
+.footerv1-subtitle {
+    font-size: 28px;
+    color: #ffffff;
+    font-family: 'Chivo-Light', serif;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.atech-field {
+    border: none !important
+}
+
+input {
+    color: white !important;
+    font-family: 'Chivo-Light', serif;
+    font-size: 20px;
+}
+
+input::placeholder {
+    color: white !important;
+    font-family: 'Chivo-Light', serif;
+    font-size: 20px;
+}
+
+.form-label {
+    color: white !important;
+    font-family: 'Chivo-Light', serif;
+    font-size: 20px;
+}
+
+.check-title {
+    color: white !important;
+    font-family: 'Chivo-Regular', serif;
+    font-size: 24px;
+}
+
+.checkbox-label {
+    color: white;
+    font-size: 16px;
+    font-family: 'Chivo-Regular', serif;
+    font-weight: lighter;
+}
+
+.no-border {
+    border: none;
+}
+
+.btn-touch {
+    /*background-color: #01FF85;*/
+    background-color: transparent;
+    color: #01FF85;
+    border: 1px solid #01FF85;
+    font-family: 'Chivo-Bold', serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    -webkit-box-shadow: 0 6px 11px 0 rgba(37, 58, 103, 0.3);
+    box-shadow: 0 6px 11px 0 rgba(37, 58, 103, 0.3);
+}
+
+.btn-touch:hover {
+    background-color: #ffffff;
+    color: #253A67;
+    border: 1px solid #ffffff;
+}
+
+.policy-text {
+    font-family: 'Roboto-Regular', serif;
+    font-size: 16px;
+}
+
+.size-auto {
+    width: 25%;
+}
+
+
+/*
+position: relative; left: 20%;
+*/
+
+@media only screen and (max-width: 480px) {
+    .spacer {
+        border: 2px solid #ffffff;
+        width: 10%;
+        text-align: center;
+        position: relative;
+        left: 45%;
+    }
+    .size-auto {
+        width: 100%;
+    }
+}

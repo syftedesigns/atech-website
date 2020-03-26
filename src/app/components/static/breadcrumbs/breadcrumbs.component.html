@@ -1,0 +1,10 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-transparent">
+        <li class="breadcrumb-item"><a [routerLink]="['/']">Inicio</a></li>
+        <li class="breadcrumb-item">
+            <a class="active" [routerLink]="['/' + tags.Title]" aria-current="page">
+                {{tags.Title}}
+            </a>
+        </li>
+    </ol>
+</nav>
