@@ -14,7 +14,7 @@ export class MenuService {
     this.menuIsOpen = true;
     $(document).ready(() => {
       // Cargo
-      $(`#${idMenu}`).attr('style', 'height: 80%');
+      $(`#${idMenu}`).attr('style', 'height: 90%');
     });
   }
 

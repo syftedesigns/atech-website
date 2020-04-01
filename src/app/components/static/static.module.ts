@@ -16,6 +16,9 @@ import { CasesComponent } from './cases/cases.component';
 import { Footerv2Component } from './footer/v2/footerv2/footerv2.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { Footerv3Component } from './footer/v3/footerv3/footerv3.component';
+import { V2Component } from './timeline/v2/v2.component';
+import { Casesv2Component } from './cases/v2/casesv2/casesv2.component';
+import { NgwWowModule } from 'ngx-wow';
 
 
 
@@ -31,7 +34,9 @@ import { Footerv3Component } from './footer/v3/footerv3/footerv3.component';
     CasesComponent,
     Footerv2Component,
     Footerv3Component,
-    BreadcrumbsComponent
+    BreadcrumbsComponent,
+    V2Component,
+    Casesv2Component
   ],
   imports: [
     CommonModule,
@@ -40,7 +45,8 @@ import { Footerv3Component } from './footer/v3/footerv3/footerv3.component';
     AngularMaterialModule,
     NgxMapboxGLModule.withConfig({
       accessToken: environment.mapbox_token.string
-    })
+    }),
+    NgwWowModule
   ],
   exports: [
     ContactComponent,
@@ -53,7 +59,9 @@ import { Footerv3Component } from './footer/v3/footerv3/footerv3.component';
     CasesComponent,
     Footerv2Component,
     Footerv3Component,
-    BreadcrumbsComponent
+    BreadcrumbsComponent,
+    V2Component,
+    Casesv2Component
   ],
   entryComponents: [
     ContactComponent,
@@ -66,7 +74,9 @@ import { Footerv3Component } from './footer/v3/footerv3/footerv3.component';
     CasesComponent,
     Footerv2Component,
     Footerv3Component,
-    BreadcrumbsComponent
+    BreadcrumbsComponent,
+    V2Component,
+    Casesv2Component
   ]
 })
 export class StaticModule { }

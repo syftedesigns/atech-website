@@ -9,14 +9,14 @@
             <!-- end logo-->
             <span class="example-spacer"></span>
             <!-- busqueda de catalogo -->
-            <form>
+            <!--<form>
                 <div class="space-10"></div>
                 <mat-form-field style="position: relative; left: -20%;" appearance="fill" class="w-100 font-12">
                     <mat-label class="Chivo-Regular">¿Qué estas buscando?</mat-label>
                     <input matInput placeholder="">
                     <mat-icon class="primary-color" matSuffix>search</mat-icon>
                 </mat-form-field>
-            </form>
+            </form>-->
             <!-- Finalizar busqueda de catalogo-->
             <!-- Desplegar menu -->
             <button (click)="ToggleMenu();" mat-button>
@@ -47,9 +47,9 @@
 </header>
 <!-- end sticky -->
 <!-- menu mobile -->
-<mat-toolbar *ngIf="!sticky" class="toolbar-background d-md-none">
+<mat-toolbar [ngClass]="{'z-inditex': !parentMenu.menuIsOpen}" class="toolbar-background d-md-none sticky">
     <header #stickyMenu>
-        <mat-toolbar-row>
+        <mat-toolbar-row [ngClass]="{'m-1em': !stickyMobile, 'm-0em' : stickyMobile}">
             <a class="navbar-brand" [routerLink]="['/']">
                 <img src="./assets/images/atech-logo.png" alt="atechjg-logo">
             </a>
@@ -61,7 +61,7 @@
     </header>
 </mat-toolbar>
 <!-- sticky mobile -->
-<header *ngIf="sticky" class="menu-sticky d-md-none">
+<header style="display: none !important;" *ngIf="sticky" class="menu-sticky d-md-none">
     <div class="container">
         <div class="row">
             <div class="col text-center">

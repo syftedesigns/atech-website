@@ -24,7 +24,7 @@
 
 .atech-marker {
     color: #01ff85;
-    font-size: 60px;
+    font-size: 40px;
     margin-left: -0.8em;
     cursor: pointer;
 }
@@ -36,45 +36,46 @@
 }
 
 .brazil-flag {
-    background-image: url(../../../../assets/images/country/brazil-flag.png);
-    background-size: cover;
+    background-image: url(../../../../assets/images/country/v2/brasil-flag.png);
+    background-repeat: no-repeat;
 }
 
 .colombia-flag {
-    background-image: url(../../../../assets/images/country/colombia-flag.png);
-    background-size: cover;
+    background-image: url(../../../../assets/images/country/v2/col-flag.png);
+    background-repeat: no-repeat;
 }
 
 .uruguay-flag {
-    background-image: url(../../../../assets/images/country/uruguay-flag.png);
-    background-size: cover;
+    background-image: url(../../../../assets/images/country/v2/ur-flag.png);
+    background-repeat: no-repeat;
 }
 
 .peru-flag {
-    background-image: url(../../../../assets/images/country/peru-flag.png);
-    background-size: cover;
+    background-image: url(../../../../assets/images/country/v2/p-flag.png);
+    background-repeat: no-repeat;
 }
 
 .argentina-flag {
-    background-image: url(../../../../assets/images/country/argentina-flag.png);
-    background-size: cover;
+    background-image: url(../../../../assets/images/country/v2/arg-flag.png);
+    background-repeat: no-repeat;
 }
 
 .chile-flag {
-    background-image: url(../../../../assets/images/country/chile-flag.png);
-    background-size: cover;
+    background-image: url(../../../../assets/images/country/v2/chl-flag.png);
+    background-repeat: no-repeat;
 }
 
 .mexico-flag {
-    background-image: url(../../../../assets/images/country/mexico-flag.png);
-    background-size: cover;
+    background-image: url(../../../../assets/images/country/v2/mex-flag.png);
+    background-repeat: no-repeat;
 }
 
 .panama-flag {
-    background-image: url(../../../../assets/images/country/panama-flag.png);
-    background-size: cover;
+    background-image: url(../../../../assets/images/country/v2/pam-flag.png);
+    background-repeat: no-repeat;
 }
 
-.border-flag {
+
+/*.border-flag {
     border: 1px solid #1249cf
-}
+}*/

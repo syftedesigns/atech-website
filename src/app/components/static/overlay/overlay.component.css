@@ -2,6 +2,18 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+figure {
+    box-shadow: none !important;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.toolbar-background {
+    background-color: transparent !important;
+}
+
 .overlay {
     height: 0%;
     width: 100%;

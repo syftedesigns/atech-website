@@ -11,6 +11,9 @@ import { StaticModule } from './components/static/static.module';
 import { ServicesModule } from './services/services.module';
 import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
 import { environment } from '../environments/environment.prod';
+import { DeviceDetectorModule } from 'ngx-device-detector';
+import { NgwWowModule } from 'ngx-wow';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import { environment } from '../environments/environment.prod';
     ServicesModule,
     NgxMapboxGLModule.withConfig({
       accessToken: environment.mapbox_token.string
-    })
+    }),
+    DeviceDetectorModule.forRoot(),
+    NgwWowModule
   ],
   providers: [],
   bootstrap: [AppComponent]

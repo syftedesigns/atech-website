@@ -1,4 +1,4 @@
-<mgl-map [style]="'mapbox://styles/ingcarlose/ck83tt8dr2tze1is4vnqnyit1/draft'" [keyboard]="false" [doubleClickZoom]="false" [touchZoomRotate]="false" [dragRotate]="false" [scrollZoom]="false" [zoom]="[1.7]">
+<mgl-map (load)="atechMap = $event" [style]="'mapbox://styles/ingcarlose/ck83tt8dr2tze1is4vnqnyit1/draft'" [keyboard]="false" [doubleClickZoom]="false" [touchZoomRotate]="false" [dragRotate]="false" [scrollZoom]="false" [zoom]="[1.4]">
     <!-- atech pointers -->
     <ng-container>
         <mgl-marker #BuenosAires [lngLat]="[-58.381592, -34.603722]">
@@ -25,7 +25,7 @@
         </mgl-popup>
     </ng-container>
     <ng-container>
-        <mgl-marker #Spain [lngLat]="[-2.173404, 41.385063]">
+        <mgl-marker #Spain [lngLat]="[2.169920, 41.387920]">
             <mat-icon class="material-icons atech-marker">place</mat-icon>
         </mgl-marker>
         <mgl-popup [marker]="Spain">

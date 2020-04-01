@@ -1,5 +1,5 @@
 <!-- sección branding -->
-<section class="bg-counter">
+<section class="bg-counter wow slideInDown">
     <div class="space-50"></div>
     <div class="main">
         <div class="container-fluid">
@@ -21,14 +21,27 @@
                     Integramos la cadena de suministro verticalmente <br> para conectar cada punto, con eficiencia y sostenibilidad, <br> gestionando de principio a fin, una solución integral.
                 </p>
                 <div class="space-80"></div>
-                <div class="text-center">
+                <!--<div class="text-center">
                     <button class="btn-view-more btn-block" mat-stroked-button>
                         Ver más
                     </button>
-                </div>
-                <div class="space-80"></div>
+                </div>-->
+                <div class="space-20"></div>
                 <!-- counter items -->
                 <div class="row text-center offset-1">
+                    <div class="col">
+                        <mat-card class="atech-counter-box">
+                            <mat-card-header>
+                                <mat-card-title>
+                                    <h1 class="counter">12</h1>
+                                    <div class="space-5"></div>
+                                </mat-card-title>
+                                <mat-card-subtitle>
+                                    <h3 class="counter-label">años uniendo Oriente <br> con Latinoamérica</h3>
+                                </mat-card-subtitle>
+                            </mat-card-header>
+                        </mat-card>
+                    </div>
                     <div class="col">
                         <mat-card class="atech-counter-box">
                             <mat-card-header>
@@ -55,19 +68,6 @@
                             </mat-card-header>
                         </mat-card>
                     </div>
-                    <div class="col">
-                        <mat-card class="atech-counter-box">
-                            <mat-card-header>
-                                <mat-card-title>
-                                    <h1 class="counter">12</h1>
-                                    <div class="space-5"></div>
-                                </mat-card-title>
-                                <mat-card-subtitle>
-                                    <h3 class="counter-label">años uniendo Oriente <br> con Latinoamérica</h3>
-                                </mat-card-subtitle>
-                            </mat-card-header>
-                        </mat-card>
-                    </div>
                 </div>
                 <!-- end counter items -->
                 <!-- end desktop -->
@@ -84,21 +84,27 @@
                     Integramos la cadena de suministro verticalmente <br> para conectar cada punto, con eficiencia y sostenibilidad, <br> gestionando de principio a fin, una solución integral.
                 </p>
                 <div class="space-50"></div>
-                <!-- CTA -->
-                <div class="text-center">
-                    <button class="btn-view-more2 btn-block" mat-stroked-button>
-                        Ver más
-                    </button>
-                </div>
-                <!-- END CTA -->
-                <div class="space-50"></div>
                 <!-- counter items -->
-                <div class="row text-center offset-1">
+                <div style="position: relative; left: 1.5em;" class="row text-center">
                     <div class="col">
                         <mat-card class="atech-counter-box">
                             <mat-card-header>
                                 <mat-card-title>
-                                    <h1 class="counter">60+</h1>
+                                    <h1 class="counter">12</h1>
+                                    <div class="space-5"></div>
+                                </mat-card-title>
+                                <mat-card-subtitle>
+                                    <h3 class="counter-label">años uniendo Oriente <br> con Latinoamérica</h3>
+                                </mat-card-subtitle>
+                            </mat-card-header>
+                        </mat-card>
+                    </div>
+                    <div class="space-15"></div>
+                    <div class="col">
+                        <mat-card class="atech-counter-box">
+                            <mat-card-header>
+                                <mat-card-title>
+                                    <h1 style="position: relative; left: 0.1em;" class="counter">60+</h1>
                                     <div class="space-5"></div>
                                 </mat-card-title>
                                 <mat-card-subtitle>
@@ -121,20 +127,6 @@
                             </mat-card-header>
                         </mat-card>
                     </div>
-                    <div class="space-15"></div>
-                    <div class="col">
-                        <mat-card class="atech-counter-box">
-                            <mat-card-header>
-                                <mat-card-title>
-                                    <h1 class="counter">XXX+</h1>
-                                    <div class="space-5"></div>
-                                </mat-card-title>
-                                <mat-card-subtitle>
-                                    <h3 class="counter-label">Envíos realizados</h3>
-                                </mat-card-subtitle>
-                            </mat-card-header>
-                        </mat-card>
-                    </div>
                 </div>
                 <div class="space-15"></div>
                 <!-- end counter items -->
@@ -145,7 +137,7 @@
 </section>
 <!-- end branding section-->
 <!-- timeline section -->
-<section style="overflow: hidden;" class="d-none d-lg-block">
+<section style="overflow: hidden;" class="d-none d-lg-block wow slideInUp">
     <div class="space-100"></div>
     <div class="container-fluid">
         <div class="container">
@@ -179,14 +171,18 @@
                                 <mat-hint class="label-parent">
                                     Análisis de mercado
                                 </mat-hint>
-                                <span *ngFor="let item of DynamicSteps; let i = index">
+                                <span class="margin-icon-step-1" *ngFor="let item of DynamicSteps; let i = index">
                                     <mat-hint *ngIf="i === 1">
-                                        <mat-icon *ngIf="item.interacted" class="icon-stepper-tab" matSuffix>
-                                            clear
-                                        </mat-icon>
-                                        <mat-icon *ngIf="!item.interacted" class="icon-stepper-tab" matSuffix>
-                                            add
-                                        </mat-icon>
+                                        <button *ngIf="item.interacted" mat-button matStepperNext>
+                                            <mat-icon class="icon-stepper-tab" matSuffix>
+                                                clear
+                                            </mat-icon>
+                                        </button>
+                                        <button mat-button matStepperNext *ngIf="!item.interacted">
+                                            <mat-icon class="icon-stepper-tab" matSuffix>
+                                                add
+                                            </mat-icon>
+                                        </button>
                                     </mat-hint>
                                 </span>
                             </ng-template>
@@ -206,14 +202,18 @@
                                 <mat-hint class="label-parent">
                                     Selección de productos
                                 </mat-hint>
-                                <span *ngFor="let item of DynamicSteps; let i = index">
+                                <span class="margin-icon-step-2" *ngFor="let item of DynamicSteps; let i = index">
                                     <mat-hint *ngIf="i === 2">
-                                        <mat-icon *ngIf="item.interacted" class="icon-stepper-tab" matSuffix>
-                                            clear
-                                        </mat-icon>
-                                        <mat-icon *ngIf="!item.interacted" class="icon-stepper-tab" matSuffix>
-                                            add
-                                        </mat-icon>
+                                        <button *ngIf="item.interacted" mat-button matStepperNext>
+                                            <mat-icon class="icon-stepper-tab" matSuffix>
+                                                clear
+                                            </mat-icon>
+                                        </button>
+                                        <button mat-button matStepperNext *ngIf="!item.interacted">
+                                            <mat-icon class="icon-stepper-tab" matSuffix>
+                                                add
+                                            </mat-icon>
+                                        </button>
                                     </mat-hint>
                                 </span>
                             </ng-template>
@@ -225,6 +225,7 @@
                                 </mat-card-content>
                             </mat-card>
                             <!-- end text below -->
+
                         </mat-step>
                         <!-- end step desplegable -->
                         <!-- start step desplegable -->
@@ -233,14 +234,18 @@
                                 <mat-hint class="label-parent">
                                     Plan de abastecimiento
                                 </mat-hint>
-                                <span *ngFor="let item of DynamicSteps; let i = index">
+                                <span class="margin-icon-step-3" *ngFor="let item of DynamicSteps; let i = index">
                                     <mat-hint *ngIf="i === 3">
-                                        <mat-icon *ngIf="item.interacted" class="icon-stepper-tab" matSuffix>
-                                            clear
-                                        </mat-icon>
-                                        <mat-icon *ngIf="!item.interacted" class="icon-stepper-tab" matSuffix>
-                                            add
-                                        </mat-icon>
+                                        <button *ngIf="item.interacted" mat-button matStepperNext>
+                                            <mat-icon class="icon-stepper-tab" matSuffix>
+                                                clear
+                                            </mat-icon>
+                                        </button>
+                                        <button mat-button matStepperNext *ngIf="!item.interacted">
+                                            <mat-icon class="icon-stepper-tab" matSuffix>
+                                                add
+                                            </mat-icon>
+                                        </button>
                                     </mat-hint>
                                 </span>
                             </ng-template>
@@ -260,14 +265,18 @@
                                 <mat-hint class="label-parent">
                                     Branding
                                 </mat-hint>
-                                <span *ngFor="let item of DynamicSteps; let i = index">
+                                <span class="margin-icon-step-4" *ngFor="let item of DynamicSteps; let i = index">
                                     <mat-hint *ngIf="i === 4">
-                                        <mat-icon *ngIf="item.interacted" class="icon-stepper-tab" matSuffix>
-                                            clear
-                                        </mat-icon>
-                                        <mat-icon *ngIf="!item.interacted" class="icon-stepper-tab" matSuffix>
-                                            add
-                                        </mat-icon>
+                                        <button *ngIf="item.interacted" mat-button matStepperNext>
+                                            <mat-icon class="icon-stepper-tab text-short" matSuffix>
+                                                clear
+                                            </mat-icon>
+                                        </button>
+                                        <button mat-button matStepperNext *ngIf="!item.interacted">
+                                            <mat-icon class="icon-stepper-tab text-short" matSuffix>
+                                                add
+                                            </mat-icon>
+                                        </button>
                                     </mat-hint>
                                 </span>
                             </ng-template>
@@ -287,14 +296,18 @@
                                 <mat-hint class="label-parent">
                                     Manufactura y calidad
                                 </mat-hint>
-                                <span *ngFor="let item of DynamicSteps; let i = index">
+                                <span class="margin-icon-step-5" *ngFor="let item of DynamicSteps; let i = index">
                                     <mat-hint *ngIf="i === 5">
-                                        <mat-icon *ngIf="item.interacted" class="icon-stepper-tab" matSuffix>
-                                            clear
-                                        </mat-icon>
-                                        <mat-icon *ngIf="!item.interacted" class="icon-stepper-tab" matSuffix>
-                                            add
-                                        </mat-icon>
+                                        <button *ngIf="item.interacted" mat-button matStepperNext>
+                                            <mat-icon class="icon-stepper-tab" matSuffix>
+                                                clear
+                                            </mat-icon>
+                                        </button>
+                                        <button mat-button matStepperNext *ngIf="!item.interacted">
+                                            <mat-icon class="icon-stepper-tab" matSuffix>
+                                                add
+                                            </mat-icon>
+                                        </button>
                                     </mat-hint>
                                 </span>
                             </ng-template>
@@ -315,14 +328,18 @@
                                 <mat-hint class="label-parent">
                                     Logística
                                 </mat-hint>
-                                <span *ngFor="let item of DynamicSteps; let i = index">
+                                <span class="margin-icon-step-6" *ngFor="let item of DynamicSteps; let i = index">
                                     <mat-hint *ngIf="i === 6">
-                                        <mat-icon *ngIf="item.interacted" class="icon-stepper-tab" matSuffix>
-                                            clear
-                                        </mat-icon>
-                                        <mat-icon *ngIf="!item.interacted" class="icon-stepper-tab" matSuffix>
-                                            add
-                                        </mat-icon>
+                                        <button *ngIf="item.interacted" mat-button matStepperNext>
+                                            <mat-icon class="icon-stepper-tab" matSuffix>
+                                                clear
+                                            </mat-icon>
+                                        </button>
+                                        <button mat-button matStepperNext *ngIf="!item.interacted">
+                                            <mat-icon class="icon-stepper-tab" matSuffix>
+                                                add
+                                            </mat-icon>
+                                        </button>
                                     </mat-hint>
                                 </span>
                             </ng-template>
@@ -376,7 +393,7 @@
                     </mat-vertical-stepper>
                     <!-- end steeper-->
                     <div class="space-80"></div>
-                    <div class="col text-center">
+                    <div class="col-sm text-center">
                         <h3 class="footer-timeline">Damos solución <b><span class="underline">en China</span></b> facilitando todas las partes<br> del proceso del cliente en Latinoamérica.</h3>
                     </div>
                 </div>
@@ -387,12 +404,12 @@
 <!-- end timeline-->
 <!-- Banner slider coming -->
 <div class="space-80"></div>
-<section class="bg-testimonial">
+<section class="bg-testimonial wow slideInLeft">
     <app-banner></app-banner>
 </section>
 <!-- end banner slider -->
 <!-- map section -->
-<section style="overflow: hidden;">
+<section class="wow slideInUp" style="overflow: hidden;">
     <app-map></app-map>
 </section>
 <!-- end map section -->
@@ -400,7 +417,7 @@
 <div class="space-120 d-none d-lg-block"></div>
 <div class="space-50 d-lg-none"></div>
 <section>
-    <app-cases></app-cases>
+    <app-casesv2></app-casesv2>
 </section>
 <div class="space-30"></div>
 <!-- end cases overview -->

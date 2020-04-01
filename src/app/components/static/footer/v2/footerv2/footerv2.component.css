@@ -23,7 +23,6 @@ a {
     color: #ffffff;
     font-family: 'Chivo-Light', Arial;
     font-size: 24px;
-    text-align: justify;
 }
 
 input {
@@ -54,9 +53,9 @@ input::placeholder {
 }
 
 .btn-touch:hover {
-    background-color: #ffffff;
+    background-color: #01FF85;
     color: #253A67;
-    border: 1px solid #253A67;
+    border: 1px solid #01FF85;
 }
 
 .area-hidden {
@@ -67,14 +66,14 @@ input::placeholder {
 
 .copyrigh-text {
     color: #ffffff;
-    font-weight: lighter;
-    font-family: 'Chivo-Regular', Arial;
+    font-family: 'Chivo-Bold', Arial !important;
     font-size: 12px;
 }
 
 .developer_link {
     font-size: 14px;
-    font-family: 'Chivo-Bold', Arial;
+    font-family: 'Chivo-Light', Arial;
+    font-weight: bold;
 }
 
 .policy-links {
@@ -86,17 +85,35 @@ input::placeholder {
     font-weight: bold;
 }
 
-address {
-    color: #ffffff;
-    font-weight: lighter;
-    font-family: 'Chivo-Regular', Arial;
-    font-size: 12px;
-    margin-left: 1.5em;
-}
-
 .separator {
     color: white;
     font-size: 16px;
     font-family: 'Chivo-Light' Arial;
     font-weight: lighter;
+}
+
+address {
+    color: #ffffff !important;
+    font-size: 14px;
+    font-family: 'Chivo-Light', Arial;
+    margin-left: 1.2em;
+    line-height: 1.6;
+    margin-top: -0.8em;
+}
+
+.pie-align {
+    text-align: right;
+}
+
+@media only screen and (max-width: 480px) {
+    address {
+        color: #ffffff;
+        font-weight: lighter;
+        font-family: 'Chivo-Regular', Arial;
+        font-size: 12px;
+        margin-left: 1.5em;
+    }
+    .pie-align {
+        text-align: center;
+    }
 }

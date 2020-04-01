@@ -8,17 +8,19 @@
 
 .footerv1-title {
     font-size: 55px;
+    font-family: 'Chivo-Bold', serif !important;
     color: #ffffff;
-    font-family: 'Chivo-Bold', serif;
-    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+    padding: 10px;
 }
 
 .footerv1-subtitle {
-    font-size: 28px;
+    font-size: 24px;
     color: #ffffff;
-    font-family: 'Chivo-Light', serif;
-    font-weight: bold;
+    font-family: 'Chivo-Light', serif !important;
     line-height: 1.5;
+    padding: 5px;
 }
 
 .atech-field {
@@ -61,8 +63,11 @@ input::placeholder {
 }
 
 .btn-touch {
-    background-color: #01FF85;
-    color: #253A67;
+    /*background-color: #01FF85;
+    color: #253A67;*/
+    background-color: transparent;
+    color: #01FF85;
+    border: 1px solid #01FF85;
     font-family: 'Chivo-Bold', serif;
     font-weight: bold;
     font-size: 16px;
@@ -71,7 +76,11 @@ input::placeholder {
     border-top-right-radius: 40px;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
-    box-shadow: 0.1em 0.1em rgba(37, 58, 103, 0.5)
+}
+
+.btn-touch:hover {
+    background-color: #01FF85;
+    color: #253A67
 }
 
 .policy-text {
@@ -91,5 +100,21 @@ position: relative; left: 20%;
         text-align: center;
         position: relative;
         left: 45%;
+    }
+    .footerv1-title {
+        font-size: 28px;
+        font-family: 'Chivo-Bold', serif !important;
+        color: #ffffff;
+        text-align: center;
+        line-height: 1.4;
+        padding: 10px;
+    }
+    .footerv1-subtitle {
+        font-size: 20px;
+        font-family: 'Chivo-Light', serif !important;
+        color: #ffffff;
+        text-align: center;
+        line-height: 1.5;
+        padding: 5px;
     }
 }

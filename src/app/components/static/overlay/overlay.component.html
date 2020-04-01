@@ -1,5 +1,18 @@
 <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" (click)="menu.CloseNav('myNav');" class="closebtn no-hover">&times;</a>
+    <mat-toolbar class="toolbar-background d-none d-md-block sticky">
+        <!-- menu -->
+        <header>
+            <mat-toolbar-row>
+                <span class="example-spacer"></span>
+                <button (click)="menu.CloseNav('myNav');" mat-button>
+                    <mat-icon class="primary-color material-icons"  aria-hidden="false" aria-label="button menu">close</mat-icon>
+                </button>
+                <!-- fin menu -->
+            </mat-toolbar-row>
+        </header>
+        <!-- end menu -->
+    </mat-toolbar>
+    <!--<a href="javascript:void(0)" (click)="menu.CloseNav('myNav');" class="closebtn no-hover">&times;</a>-->
     <div class="overlay-content">
         <!-- Logo -->
         <figure>
@@ -16,6 +29,5 @@
         <figure>
             <img src="./assets/images/atech-slogan-logo.png" alt="atechjg-logo-slogan">
         </figure>
-        <mat-icon class="primary-color font-30">arrow_downward</mat-icon>
     </div>
 </div>

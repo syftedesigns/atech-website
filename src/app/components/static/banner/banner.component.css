@@ -1,6 +1,6 @@
 .testimonial-title {
-    font-size: 38px !important;
-    font-family: 'Chivo-Regular', serif;
+    font-size: 38px;
+    font-family: 'Chivo-Bold', serif;
     line-height: 1.4;
     font-weight: bold;
     text-align: center;
@@ -19,9 +19,9 @@
 }
 
 .arrow-left:hover {
-    border: 1px solid #ffffff;
-    background-color: #ffffff;
-    color: #056DFF
+    border: 1px solid #253A67;
+    background-color: transparent;
+    color: #253A67
 }
 
 .arrow-position-left {
@@ -44,6 +44,13 @@
 @media only screen and (max-width: 480px) {
     .p-80 {
         padding: 40px;
+    }
+    .testimonial-title {
+        font-size: 24px;
+        font-family: 'Chivo-Bold', serif;
+        line-height: 1.4;
+        font-weight: bold;
+        text-align: center;
     }
 }
 
