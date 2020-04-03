@@ -5,7 +5,10 @@
             <div class="d-none d-md-block arrow-position-left">
                 <div class="space-150"></div>
                 <a href="#carouselExampleControls" role="button" data-slide="prev">
-                    <mat-icon class="material-icons arrow-left">keyboard_arrow_left</mat-icon>
+                    <!--<mat-icon class="material-icons arrow-left">keyboard_arrow_left</mat-icon>-->
+                    <span (mouseenter)="OnHover($event, 'left');" (mouseleave)="OnMouseLeave($event, 'left')" class="arrow-design">
+                        <img #arrowLeft src="./assets/images/FlechaIzq.png" alt="arrow-left">
+                    </span>
                 </a>
             </div>
             <!-- end arrow -->
@@ -43,8 +46,11 @@
             <!-- arrow left -->
             <div class="d-none d-md-block arrow-position-right">
                 <div class="space-150"></div>
-                <a style="margin-left: -60%;" href="#carouselExampleControls" role="button" data-slide="next">
-                    <mat-icon class="material-icons arrow-left">keyboard_arrow_right</mat-icon>
+                <a href="#carouselExampleControls" role="button" data-slide="next">
+                    <!--<mat-icon class="material-icons arrow-left">keyboard_arrow_right</mat-icon>-->
+                    <span (mouseenter)="OnHover($event, 'right');" (mouseleave)="OnMouseLeave($event, 'right')" class="arrow-design">
+                        <img #arrowRight src="./assets/images/FlechaDER.png" alt="arrow-right">
+                    </span>
                 </a>
             </div>
             <!-- end arrow left-->

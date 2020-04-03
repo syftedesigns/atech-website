@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { AngularMaterialModule } from '../angular-material.module';
 import { MenuService } from './menu/menu.service';
+import { ContactService } from './contact/contact.service';
+import { MailchimpService } from './mail/mailchimp.service';
 
 
 
@@ -11,10 +13,13 @@ import { MenuService } from './menu/menu.service';
   imports: [
     CommonModule,
     HttpClientModule,
-    AngularMaterialModule,
+    HttpClientJsonpModule,
+    AngularMaterialModule
   ],
   providers: [
-    MenuService
+    MenuService,
+    ContactService,
+    MailchimpService
   ]
 })
 export class ServicesModule { }

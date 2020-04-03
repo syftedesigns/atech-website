@@ -44,6 +44,7 @@ input::placeholder {
     font-family: 'Chivo-Bold', serif;
     font-weight: bold;
     font-size: 16px;
+    box-shadow: none !important;
     padding: 6px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -66,14 +67,13 @@ input::placeholder {
 
 .copyrigh-text {
     color: #ffffff;
-    font-family: 'Chivo-Bold', Arial !important;
-    font-size: 12px;
+    font-family: 'Chivo-Light', Arial;
+    font-size: 14px;
 }
 
 .developer_link {
     font-size: 14px;
     font-family: 'Chivo-Light', Arial;
-    font-weight: bold;
 }
 
 .policy-links {
@@ -114,6 +114,18 @@ address {
         margin-left: 1.5em;
     }
     .pie-align {
-        text-align: center;
+        text-align: left;
+    }
+    .pie-align>a {
+        font-size: 12px;
+    }
+    .m-offright {
+        margin-left: -1.5em !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .footer-desktop-m {
+        margin-left: -8%
     }
 }

@@ -15,10 +15,9 @@
 }
 
 .popup-subheader {
-    text-align: center;
-    color: #5B5B5C;
-    font-family: 'Roboto-Light', serif;
-    font-weight: bold;
+    text-align: left;
+    color: #a1a0a0 !important;
+    font-family: 'Roboto-Regular', serif !important;
     font-size: 24px;
 }
 

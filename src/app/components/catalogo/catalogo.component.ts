@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class CatalogoComponent implements OnInit {
 // tslint:disable-next-line:max-line-length
   // tslint:disable-next-line:quotemark
-  HTML_FOOTER_TITLE: string = "<span  class='d-lg-none font-32'>¿¡Hola! ¿Quieres que uno de nuestros asesores" +
+  HTML_FOOTER_TITLE: string = "<span  class='d-lg-none font-24'>¿¡Hola! ¿Quieres que uno de nuestros asesores" +
   // tslint:disable-next-line:quotemark
-  "se comunique contigo o te enviemos nuestro catálogo?</span>" +
+  "&nbsp;se comunique contigo o te enviemos nuestro catálogo?</span>" +
   // tslint:disable-next-line:quotemark
   "<span class='d-none d-lg-block'>¡Hola! <br><div class='space-30'></div> " +
   // tslint:disable-next-line:quotemark

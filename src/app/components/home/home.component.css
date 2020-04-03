@@ -129,35 +129,26 @@
 
 .stepper-card-content {
     color: #5B5B5C;
-    font-size: 21px;
-    font-family: 'Roboto-Regular', Arial, Helvetica, sans-serif;
-    text-align: justify;
-    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Chivo-Regular', Arial, Helvetica, sans-serif !important;
+    text-align: left;
     line-height: 1.5;
 }
 
 .bg-testimonial {
-    background: #056DFF;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom #06A1FE, #056DFF);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom #06A1FE, #056DFF);
-    /*
-    background: linear-gradient(to bottom #056DFF, #06A1FE);
-    */
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgb(5, 109, 255);
+    background: -moz-linear-gradient(0deg, rgba(5, 109, 255, 1) 5%, rgba(6, 161, 254, 1) 95%);
+    background: -webkit-linear-gradient(0deg, rgba(5, 109, 255, 1) 5%, rgba(6, 161, 254, 1) 95%);
+    background: linear-gradient(0deg, rgba(5, 109, 255, 1) 5%, rgba(6, 161, 254, 1) 95%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#056dff", endColorstr="#06a1fe", GradientType=1);
 }
 
 .bg-counter {
-    background: #056DFF;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom #06A1FE, #056DFF);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom #06A1FE, #056DFF);
-    /*
-    background: linear-gradient(to bottom #056DFF, #06A1FE);
-    */
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgb(5, 109, 255);
+    background: -moz-linear-gradient(0deg, rgba(5, 109, 255, 1) 5%, rgba(6, 161, 254, 1) 95%);
+    background: -webkit-linear-gradient(0deg, rgba(5, 109, 255, 1) 5%, rgba(6, 161, 254, 1) 95%);
+    background: linear-gradient(0deg, rgba(5, 109, 255, 1) 5%, rgba(6, 161, 254, 1) 95%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#056dff", endColorstr="#06a1fe", GradientType=1);
 }
 
 .fixed-icon {
@@ -211,6 +202,19 @@ Mobile
         font-family: 'Chivo-Bold', serif !important;
         color: #253A67;
         font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .se-mg {
+        margin-left: -10.5em !important;
+    }
+}
+
+@media only screen and (min-width: 330px) and (max-width: 480px) {
+    .x-mg {
+        position: relative;
+        left: 1.5em;
     }
 }
 
@@ -271,22 +275,23 @@ Mobile
 
 @media only screen and (min-width: 1400px) {
     .margin-icon-step-1 {
-        margin-left: 20%;
+        margin-left: 26%;
+        /*+6%*/
     }
     .margin-icon-step-2 {
-        margin-left: 8.40%;
+        margin-left: 12%;
     }
     .margin-icon-step-3 {
-        margin-left: 6.40%;
+        margin-left: 9.40%;
     }
     .margin-icon-step-4 {
-        margin-left: 29.30%;
+        margin-left: 34%;
     }
     .margin-icon-step-5 {
-        margin-left: 4.70%;
+        margin-left: 6.70%;
     }
     .margin-icon-step-6 {
-        margin-left: 21.65%;
+        margin-left: 25%;
     }
 }
 
@@ -313,22 +318,23 @@ Mobile
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
     .margin-icon-step-1 {
-        margin-left: 20%;
+        margin-left: 26%;
+        /*+6%*/
     }
     .margin-icon-step-2 {
-        margin-left: 8.40%;
+        margin-left: 12%;
     }
     .margin-icon-step-3 {
-        margin-left: 6.40%;
+        margin-left: 9.40%;
     }
     .margin-icon-step-4 {
-        margin-left: 29.30%;
+        margin-left: 34%;
     }
     .margin-icon-step-5 {
-        margin-left: 4.70%;
+        margin-left: 6.70%;
     }
     .margin-icon-step-6 {
-        margin-left: 21.65%;
+        margin-left: 25%;
     }
 }
 

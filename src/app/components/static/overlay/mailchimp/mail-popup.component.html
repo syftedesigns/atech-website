@@ -1,0 +1,52 @@
+<section>
+    <div class="space-20"></div>
+    <div class="container-fluid">
+        <div class="container">
+            <h3 class="atech-popup">
+                Solo un paso más!, por favor proporcionanos estos datos, para alistarte en nuestra base de datos :)
+            </h3>
+            <div class="space-15"></div>
+            <form (ngSubmit)="GetNameToMailchimp(mailchimp)" ngNativeValidate #mailchimp="ngForm">
+                <div class="form-row text-center">
+                    <div class="col">
+                        <p>
+                            <mat-form-field class="w-100 atech-field" appearance="fill">
+                                <mat-label class="color-popup">Nombre</mat-label>
+                                <input ngModel type="text" name="FNAME" required matInput>
+                            </mat-form-field>
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            <mat-form-field class="w-100 atech-field" appearance="fill">
+                                <mat-label class="color-popup">Apellido</mat-label>
+                                <input ngModel type="text" name="LNAME" required matInput>
+                            </mat-form-field>
+                        </p>
+                    </div>
+                    <fieldset>
+                        <input ([ngModel])="EMAIL" type="hidden" name="EMAIL">
+                    </fieldset>
+                </div>
+                <div class="form-row text-center">
+                    <div class="col">
+                        <button type="submit" mat-raised-button class="w-100 btn-block btn-touch" color="primary">
+                            SUSCRIBIRME
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button (click)="bottomSheetRef.dismiss(null);" type="button" mat-raised-button class="w-100 btn-block btn-touch-cancel" color="default">
+                            Cancelar
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="space-30"></div>
+            <div class="col-12 text-center">
+                <mat-hint class="policy-text text-center">
+                    Tus datos no serán cedidos a terceros.
+                </mat-hint>
+            </div>
+        </div>
+    </div>
+</section>

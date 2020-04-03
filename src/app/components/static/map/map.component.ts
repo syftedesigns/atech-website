@@ -18,8 +18,8 @@ export class MapComponent implements OnInit {
       // Verificamos si se un celular para hacer el zoom out
       if (this.device.isMobile()) {
         this.atechMap.flyTo({
-          center: [-58.381592, -34.603722],
-          zoom: 1
+          // center: [-58.381592, -34.603722],
+          zoom: 0.86
         });
       }
     }, 3000);

@@ -1,0 +1,18 @@
+<mat-card class="w-100 popup-card">
+    <mat-card-header>
+        <span mat-card-avatar>
+            <img style="margin-left: -1.6em;" [src]="'./assets/images/'+ officeIco + '.png'" [alt]="officeTitle">
+        </span>
+        <mat-card-title>
+            <div class="space-10"></div>
+            <h1 class="text-center popup-title-colors popup-title">
+                {{officeTitle}}
+            </h1>
+        </mat-card-title>
+        <mat-card-subtitle style="position: relative; top: -1em;">
+            <h3 class="popup-subheader">
+                {{officeSubtitle}}
+            </h3>
+        </mat-card-subtitle>
+    </mat-card-header>
+</mat-card>

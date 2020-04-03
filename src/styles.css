@@ -667,11 +667,18 @@ body {
 
 mgl-map {
     width: 100vw;
-    height: 50vh;
+    height: 70vh;
 }
 
 .mapboxgl-popup {
-    max-width: 28vh !important;
+    max-width: 100vh !important;
+}
+
+.mapboxgl-popup-content {
+    width: 30em !important;
+    height: 10em !important;
+    -webkit-box-shadow: 0 6px 11px 0 rgba(37, 58, 103, 0.3);
+    box-shadow: 0 6px 11px 0 rgba(37, 58, 103, 0.3);
 }
 
 .mapboxgl-popup-close-button {
@@ -684,6 +691,11 @@ mgl-map {
 
 .mat-form-field-appearance-outline .mat-form-field-outline {
     color: white;
+}
+
+mat-card-avatar {
+    width: 100px !important;
+    height: 100px !important;
 }
 
 
@@ -704,6 +716,34 @@ input.mat-input-element {
 figure {
     -webkit-box-shadow: 0 6px 11px 0 rgba(37, 58, 103, 0.3);
     box-shadow: 0 6px 11px 0 rgba(37, 58, 103, 0.3);
+}
+
+.red-snackbar {
+    background: rgb(228, 82, 56) !important;
+}
+
+.success-snackbar {
+    background: #253A67
+}
+
+.mat-dialog-container {
+    padding: 6px !important;
+}
+
+.hidden-o {
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {}
+
+.top-m {
+    position: relative;
+    top: 1em;
+}
+
+button:focus {
+    outline: none;
+    border: none;
 }
 
 

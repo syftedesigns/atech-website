@@ -76,6 +76,7 @@ input::placeholder {
     border-top-right-radius: 40px;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
+    box-shadow: none !important;
 }
 
 .btn-touch:hover {

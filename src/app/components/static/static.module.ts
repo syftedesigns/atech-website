@@ -19,6 +19,9 @@ import { Footerv3Component } from './footer/v3/footerv3/footerv3.component';
 import { V2Component } from './timeline/v2/v2.component';
 import { Casesv2Component } from './cases/v2/casesv2/casesv2.component';
 import { NgwWowModule } from 'ngx-wow';
+import { MailPopupComponent } from './overlay/mailchimp/mail-popup.component';
+import { Mapv2Component } from './map/mobile/mapv2/mapv2.component';
+import { ScreenComponent } from './map/mobile/mapv2/screen.component';
 
 
 
@@ -31,12 +34,15 @@ import { NgwWowModule } from 'ngx-wow';
     OverlayComponent,
     BannerComponent,
     MapComponent,
+    Mapv2Component,
     CasesComponent,
     Footerv2Component,
     Footerv3Component,
     BreadcrumbsComponent,
     V2Component,
-    Casesv2Component
+    Casesv2Component,
+    MailPopupComponent,
+    ScreenComponent
   ],
   imports: [
     CommonModule,
@@ -56,12 +62,15 @@ import { NgwWowModule } from 'ngx-wow';
     OverlayComponent,
     BannerComponent,
     MapComponent,
+    Mapv2Component,
     CasesComponent,
     Footerv2Component,
     Footerv3Component,
     BreadcrumbsComponent,
     V2Component,
-    Casesv2Component
+    Casesv2Component,
+    MailPopupComponent,
+    ScreenComponent
   ],
   entryComponents: [
     ContactComponent,
@@ -71,12 +80,15 @@ import { NgwWowModule } from 'ngx-wow';
     OverlayComponent,
     BannerComponent,
     MapComponent,
+    Mapv2Component,
     CasesComponent,
     Footerv2Component,
     Footerv3Component,
     BreadcrumbsComponent,
     V2Component,
-    Casesv2Component
+    Casesv2Component,
+    MailPopupComponent,
+    ScreenComponent
   ]
 })
 export class StaticModule { }

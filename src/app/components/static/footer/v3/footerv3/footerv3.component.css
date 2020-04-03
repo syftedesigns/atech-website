@@ -67,6 +67,7 @@ input::placeholder {
     border: 1px solid #01FF85;
     font-family: 'Chivo-Bold', serif;
     font-weight: bold;
+    box-shadow: none !important;
     font-size: 16px;
     padding: 10px;
     border-top-left-radius: 40px;
@@ -89,6 +90,10 @@ input::placeholder {
     width: 25%;
 }
 
+.w-form {
+    width: 75%;
+}
+
 
 /*
 position: relative; left: 20%;
@@ -103,6 +108,25 @@ position: relative; left: 20%;
         left: 45%;
     }
     .size-auto {
+        width: 100%;
+    }
+    .footerv1-title {
+        font-size: 28px;
+        font-family: 'Chivo-Bold', serif !important;
+        color: #ffffff;
+        text-align: center;
+        line-height: 1.4;
+        padding: 10px;
+    }
+    .footerv1-subtitle {
+        font-size: 20px;
+        font-family: 'Chivo-Light', serif !important;
+        color: #ffffff;
+        text-align: center;
+        line-height: 1.5;
+        padding: 5px;
+    }
+    .w-form {
         width: 100%;
     }
 }

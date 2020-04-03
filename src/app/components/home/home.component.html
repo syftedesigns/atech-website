@@ -1,6 +1,7 @@
 <!-- sección branding -->
 <section class="bg-counter wow slideInDown">
     <div class="space-50"></div>
+    <div class="space-50 d-md-none"></div>
     <div class="main">
         <div class="container-fluid">
             <div class="container text-center d-none d-md-block">
@@ -33,7 +34,7 @@
                         <mat-card class="atech-counter-box">
                             <mat-card-header>
                                 <mat-card-title>
-                                    <h1 class="counter">12</h1>
+                                    <h1 class="counter">13</h1>
                                     <div class="space-5"></div>
                                 </mat-card-title>
                                 <mat-card-subtitle>
@@ -85,12 +86,12 @@
                 </p>
                 <div class="space-50"></div>
                 <!-- counter items -->
-                <div style="position: relative; left: 1.5em;" class="row text-center">
+                <div class="row text-center x-mg">
                     <div class="col">
                         <mat-card class="atech-counter-box">
                             <mat-card-header>
                                 <mat-card-title>
-                                    <h1 class="counter">12</h1>
+                                    <h1 class="counter">13</h1>
                                     <div class="space-5"></div>
                                 </mat-card-title>
                                 <mat-card-subtitle>
@@ -168,6 +169,7 @@
                         <!-- start step desplegable -->
                         <mat-step #matStep>
                             <ng-template matStepLabel>
+                                <div class="space-15"></div>
                                 <mat-hint class="label-parent">
                                     Análisis de mercado
                                 </mat-hint>
@@ -199,6 +201,7 @@
                         <!-- start step desplegable -->
                         <mat-step #matStep>
                             <ng-template matStepLabel>
+                                <div class="space-15"></div>
                                 <mat-hint class="label-parent">
                                     Selección de productos
                                 </mat-hint>
@@ -231,6 +234,7 @@
                         <!-- start step desplegable -->
                         <mat-step #matStep>
                             <ng-template matStepLabel>
+                                <div class="space-15"></div>
                                 <mat-hint class="label-parent">
                                     Plan de abastecimiento
                                 </mat-hint>
@@ -262,6 +266,7 @@
                         <!-- start step desplegable -->
                         <mat-step #matStep>
                             <ng-template matStepLabel>
+                                <div class="space-10"></div>
                                 <mat-hint class="label-parent">
                                     Branding
                                 </mat-hint>
@@ -293,6 +298,7 @@
                         <!-- start step desplegable -->
                         <mat-step #matStep>
                             <ng-template matStepLabel>
+                                <div class="space-15"></div>
                                 <mat-hint class="label-parent">
                                     Manufactura y calidad
                                 </mat-hint>
@@ -325,6 +331,7 @@
                         <!-- start step desplegable -->
                         <mat-step #matStep>
                             <ng-template matStepLabel>
+                                <div class="space-10"></div>
                                 <mat-hint class="label-parent">
                                     Logística
                                 </mat-hint>
@@ -404,15 +411,21 @@
 <!-- end timeline-->
 <!-- Banner slider coming -->
 <div class="space-80"></div>
-<section class="bg-testimonial wow slideInLeft">
+<section class="bg-testimonial wow slideInUp">
     <app-banner></app-banner>
 </section>
 <!-- end banner slider -->
-<!-- map section -->
-<section class="wow slideInUp" style="overflow: hidden;">
+<!-- map desktop section -->
+<section class="wow slideInUp d-none d-lg-block" style="overflow: hidden;">
     <app-map></app-map>
 </section>
-<!-- end map section -->
+<!-- end map desktop section -->
+<!-- map mobile -->
+<section class="wow slideInUp d-lg-none" style="overflow: hidden;">
+    <app-mapv2></app-mapv2>
+</section>
+<!-- end map mobile -->
+
 <!-- cases overview -->
 <div class="space-120 d-none d-lg-block"></div>
 <div class="space-50 d-lg-none"></div>
@@ -422,7 +435,7 @@
 <div class="space-30"></div>
 <!-- end cases overview -->
 <!-- footer home -->
-<section style="overflow: hidden;" class="bg-testimonial">
+<section style="overflow: hidden;" class="bg-testimonial wow slideInUp">
     <app-footer></app-footer>
 </section>
 <!-- end footer home -->

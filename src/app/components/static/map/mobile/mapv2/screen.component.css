@@ -1,0 +1,30 @@
+.popup-card {
+    border: 0px !important;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.popup-title-colors {
+    color: #1249cf
+}
+
+.popup-title {
+    font-family: 'Roboto-Bold', serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.popup-subheader {
+    text-align: left;
+    color: #a1a0a0 !important;
+    font-family: 'Roboto-Regular', serif !important;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 320px) {
+    .popup-title {
+        font-family: 'Roboto-Bold', serif;
+        font-weight: bold;
+        font-size: 16px;
+    }
+}

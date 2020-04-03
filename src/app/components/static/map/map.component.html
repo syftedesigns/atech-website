@@ -6,21 +6,22 @@
         </mgl-marker>
         <mgl-popup [marker]="BuenosAires" [offset]="10" [anchor]="'left'">
             <mat-card class=" w-100 popup-card">
-                <mat-card-content>
-                    <div class="row ">
-                        <div class="col-3">
-                            <mat-icon class="material-icons font-60 popup-title-colors">
-                                location_city
-                            </mat-icon>
-                        </div>
-                        <div class="col ">
-                            <h1 class="text-center popup-title-colors popup-title">
-                                Oficina Comercial
-                            </h1>
-                        </div>
-                    </div>
-                    <h3 class="popup-subheader ">Bs.As., Argentina</h3>
-                </mat-card-content>
+                <mat-card-header>
+                    <span mat-card-avatar>
+                        <img style="margin-left: -1.6em;" src="./assets/images/atech-oficina-comercial3.png" alt="atech-oficina-comercial">
+                    </span>
+                    <mat-card-title>
+                        <div class="space-10"></div>
+                        <h1 class="text-center popup-title-colors popup-title">
+                            Oficina Comercial
+                        </h1>
+                    </mat-card-title>
+                    <mat-card-subtitle style="position: relative; top: -0.5em;">
+                        <h3 class="popup-subheader">
+                            Bs.As., Argentina
+                        </h3>
+                    </mat-card-subtitle>
+                </mat-card-header>
             </mat-card>
         </mgl-popup>
     </ng-container>
@@ -28,23 +29,24 @@
         <mgl-marker #Spain [lngLat]="[2.169920, 41.387920]">
             <mat-icon class="material-icons atech-marker">place</mat-icon>
         </mgl-marker>
-        <mgl-popup [marker]="Spain">
+        <mgl-popup [marker]="Spain" [anchor]="'top'">
             <mat-card class=" w-100 popup-card">
-                <mat-card-content>
-                    <div class="row">
-                        <div class="col-3">
-                            <mat-icon class="material-icons font-60 popup-title-colors">
-                                emoji_objects
-                            </mat-icon>
-                        </div>
-                        <div class="col ">
-                            <h1 class="text-center popup-title-colors popup-title">
-                                Dpto. de Innovación
-                            </h1>
-                        </div>
-                    </div>
-                    <h3 class="popup-subheader">Barcelona, España</h3>
-                </mat-card-content>
+                <mat-card-header>
+                    <span mat-card-avatar>
+                        <img style="margin-left: -1.6em;" src="./assets/images/atech-departamento-de-innovacion.png" alt="atech-departamento-de-innovacion">
+                    </span>
+                    <mat-card-title>
+                        <div class="space-10"></div>
+                        <h1 class="text-center popup-title-colors popup-title">
+                            Dpto. de Innovación
+                        </h1>
+                    </mat-card-title>
+                    <mat-card-subtitle style="position: relative; top: -0.5em;">
+                        <h3 class="popup-subheader">
+                            Barcelona, España
+                        </h3>
+                    </mat-card-subtitle>
+                </mat-card-header>
             </mat-card>
         </mgl-popup>
     </ng-container>
@@ -52,23 +54,24 @@
         <mgl-marker #China [lngLat]="[114.057861, 22.543097]">
             <mat-icon style="margin-top: -0.8em !important;" class="material-icons atech-marker">place</mat-icon>
         </mgl-marker>
-        <mgl-popup [marker]="China">
-            <mat-card class=" w-100 popup-card ">
-                <mat-card-content>
-                    <div class="row ">
-                        <div class="col-3 ">
-                            <mat-icon class="material-icons font-60 popup-title-colors ">
-                                home_work
-                            </mat-icon>
-                        </div>
-                        <div class="col ">
-                            <h1 class="text-center popup-title-colors popup-title ">
-                                Casa Matriz
-                            </h1>
-                        </div>
-                    </div>
-                    <h3 class="popup-subheader">Shenzhen, China</h3>
-                </mat-card-content>
+        <mgl-popup [marker]="China" [anchor]="'right'">
+            <mat-card class="w-100 popup-card">
+                <mat-card-header>
+                    <span mat-card-avatar>
+                        <img style="margin-left: -1.7em;" src="./assets/images/atech-casa-matriz.png" alt="atech-casa-matriz">
+                    </span>
+                    <mat-card-title>
+                        <div class="space-10"></div>
+                        <h1 class="text-center popup-title-colors popup-title">
+                            Casa Matriz
+                        </h1>
+                    </mat-card-title>
+                    <mat-card-subtitle style="position: relative; top: -0.5em;">
+                        <h3 class="popup-subheader">
+                            Shenzhen, China
+                        </h3>
+                    </mat-card-subtitle>
+                </mat-card-header>
             </mat-card>
         </mgl-popup>
     </ng-container>

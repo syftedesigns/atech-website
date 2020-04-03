@@ -1,35 +1,35 @@
-<section class="bg-footer wow slideInUp">
+<section class="bg-footer">
     <div class="main">
         <div class="container-fluid">
             <div class="container">
                 <div class="space-80"></div>
-                <figure style="margin-left: 1em;">
+                <figure style="margin-left: -0.5em;">
                     <a [routerLink]="['/']" title="Inicio">
                         <img src="./assets/images/atech_footer_logo.png" alt="atech-logo">
                     </a>
                 </figure>
                 <div class="space-10"></div>
                 <div class="row">
-                    <div class="col-sm">
+                    <div class="col-sm m-offright">
                         <mat-nav-list role="navigation">
                             <div mat-subheader>
                                 <mat-label class="footer-list-title">SITIO</mat-label>
                             </div>
-                            <a aria-label="Navegar a Catálogo" mat-list-item [routerLink]="['/catalogo']">
-                                Catálogo
-                            </a>
-                            <a aria-label="Navegar a Manufactura" mat-list-item [routerLink]="['/manufactura']">
+                            <a (click)="menu.ScrollTOP();" aria-label="Navegar a Manufactura" mat-list-item [routerLink]="['/manufactura']">
                                 Manufactura
                             </a>
-                            <a aria-label="Navegar a Logística" mat-list-item [routerLink]="['/logistica']">
+                            <a (click)="menu.ScrollTOP();" aria-label="Navegar a Logística" mat-list-item [routerLink]="['/logistica']">
                                 Logística
                             </a>
-                            <a aria-label="Navegar a Innovación" mat-list-item [routerLink]="['/innovacion']">
+                            <a (click)="menu.ScrollTOP();" aria-label="Navegar a Innovación" mat-list-item [routerLink]="['/innovacion']">
                                 Innovación
+                            </a>
+                            <a (click)="menu.ScrollTOP();" aria-label="Navegar a Catálogo" mat-list-item [routerLink]="['/catalogo']">
+                                Catálogo
                             </a>
                         </mat-nav-list>
                     </div>
-                    <div class="col-sm">
+                    <div class="col-sm footer-desktop-m m-offright">
                         <mat-nav-list role="navigation">
                             <div mat-subheader>
                                 <mat-label class="footer-list-title">CONTACTO</mat-label>
@@ -57,17 +57,20 @@
                     <div class="col-sm col-md-12 col-lg-5">
                         <div class="space-30 d-lg-none"></div>
                         <!-- newsletter -->
-                        <form>
+                        <form (ngSubmit)="MailchimpSuscription(newsletterForm);" #newsletterForm="ngForm" ngNativeValidate>
                             <h1 class="newsletter-title">
                                 ¡Sigamos en contacto! ¿Interesado en recibir ofertas, promociones y novedades?
                             </h1>
                             <p>
                                 <mat-form-field class="w-100" appearance="outline">
                                     <mat-label class="text-light form-label">Correo electrónico</mat-label>
-                                    <input type="email" name="email" required matInput>
+                                    <input ngModel type="email" name="email" required matInput>
                                 </mat-form-field>
                             </p>
-                            <button type="submit" mat-raised-button class="btn-block w-50 btn-touch">
+                            <button type="submit" mat-raised-button class="btn-block w-50 btn-touch d-none d-md-block">
+                                SUSCRIBIRME
+                            </button>
+                            <button type="submit" mat-raised-button class="btn-block w-100 btn-touch d-md-none">
                                 SUSCRIBIRME
                             </button>
                         </form>
@@ -85,7 +88,7 @@
                     <div class="row">
                         <div class="col-sm">
                             <h3 style="color: white" class="copyright-text">
-                                <span style="font-family: 'Chivo-Light';">All Rights Reserved by AtechJG © 2020 | Development by</span>
+                                <span style="font-family: 'Chivo-Light'; font-size: 14px;">All Rights Reserved by AtechJG © 2020 | Development by</span>
                                 <a class="developer_link" target="_blank" href="https://syftedesigns.com">
                                     SyfteDesigns
                                 </a>

@@ -2,12 +2,12 @@
     <div class="container-fluid">
         <div class="container">
             <div class="space-100"></div>
-            <div class="row wow slideInDown">
+            <div class="row">
                 <div class="col text-center">
                     <h1 class="footerv1-title" [innerHTML]="titleFooter"></h1>
                     <div class="space-30"></div>
                     <div class="spacer"></div>
-                    <div class="space-30"></div>
+                    <div class="space-30 d-none d-md-block"></div>
                     <h3 class="footerv1-subtitle">
                         ¿Crees que Atech puede resultar de utilidad para tu negocio? <br class="d-none d-lg-block"> Déjanos algunos datos básicos y nos pondremos en contacto
                     </h3>
@@ -15,47 +15,47 @@
             </div>
             <div class="space-30"></div>
             <!-- start form v3 -->
-            <form>
+            <form (ngSubmit)="SendAtechForm(atechForm);" ngNativeValidate #atechForm="ngForm">
                 <div class="form-row text-center">
-                    <div class="col-sm wow slideInLeft">
+                    <div class="col-sm">
                         <p>
-                            <mat-form-field class="w-75 atech-field offset-lg-3" appearance="outline">
+                            <mat-form-field class="w-form atech-field offset-lg-3" appearance="outline">
                                 <mat-label class="text-light form-label">Nombre</mat-label>
-                                <input type="text" name="firstname" required matInput>
+                                <input ngModel type="text" name="firstname" required matInput>
                             </mat-form-field>
                         </p>
                     </div>
-                    <div class="col-sm wow slideInRight">
+                    <div class="col-sm">
                         <p>
-                            <mat-form-field class="w-75 atech-field" appearance="outline">
+                            <mat-form-field class="w-form atech-field" appearance="outline">
                                 <mat-label class="text-light form-label">Apellido</mat-label>
-                                <input type="text" name="lastname" required matInput>
+                                <input ngModel type="text" name="lastname" required matInput>
                             </mat-form-field>
                         </p>
                     </div>
                 </div>
                 <div class="form-row text-center">
-                    <div class="col-sm wow slideInLeft">
+                    <div class="col-sm">
                         <p>
-                            <mat-form-field class="w-75 atech-field offset-lg-3" appearance="outline">
+                            <mat-form-field class="w-form atech-field offset-lg-3" appearance="outline">
                                 <mat-label class="text-light form-label">País</mat-label>
-                                <input type="text" name="country" required matInput>
+                                <input ngModel type="text" name="country" required matInput>
                             </mat-form-field>
                         </p>
                     </div>
-                    <div class="col-sm wow slideInRight">
+                    <div class="col-sm">
                         <p>
-                            <mat-form-field class="w-75 atech-field" appearance="outline">
+                            <mat-form-field class="w-form atech-field" appearance="outline">
                                 <mat-label class="text-light form-label">Correo electrónico</mat-label>
-                                <input type="email" name="email" required matInput>
+                                <input ngModel type="email" name="email" required matInput>
                             </mat-form-field>
                         </p>
                     </div>
                 </div>
-                <div class="row wow slideInUp">
+                <div class="row">
                     <div class="col text-center offset-1">
                         <div class="space-20"></div>
-                        <button type="submit" class="text-center btn-lg btn-touch btn-block size-auto" mat-raised-button>
+                        <button [disabled]="loading" type="submit" class="text-center btn-lg btn-touch btn-block size-auto" mat-raised-button>
                             ¡SI, ME INTERESA!
                         </button>
                         <br>
