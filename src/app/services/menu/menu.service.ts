@@ -15,6 +15,9 @@ export class MenuService {
     $(document).ready(() => {
       // Cargo
       $(`#${idMenu}`).attr('style', 'height: 100%');
+      setTimeout(() => {
+        $('#atech-slogan').attr('style', 'opacity: 1');
+      }, 400);
     });
   }
 
@@ -24,6 +27,10 @@ export class MenuService {
     $(document).ready(() => {
       // Cargo
       $(`#${idMenu}`).attr('style', 'height: 0%');
+      setTimeout(() => {
+        $('#atech-slogan').attr('style', 'opacity: 0');
+      }, 50);
+      // $('#atech-slogan').show();
     });
   }
   // Scroll top after navigate page

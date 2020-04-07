@@ -5,15 +5,19 @@
                 <header>
                     <div class="row">
                         <div class="col text-center">
-                            <div class="space-160"></div>
+                            <div class="space-160 d-none d-md-block"></div>
+                            <div class="space-60 d-md-none"></div>
                             <!-- header and subheader here-->
-                            <h3 class="title-primary top-m">
-                                Valor a largo plazo
-                            </h3>
-                            <h1 class="title-secondary">
-                                Somos protagonistas del <br class="d-none d-md-block"> futuro que queremos.
-                            </h1>
-                            <div class="space-200"></div>
+                            <section style="margin-top: 2%;" class="title-mobile-m">
+                                <h3 class="title-primary top-m">
+                                    Valor a largo plazo
+                                </h3>
+                                <h1 class="title-secondary">
+                                    Somos protagonistas del <br class="d-none d-md-block"> futuro que queremos.
+                                </h1>
+                            </section>
+                            <div class="space-160 d-none d-md-block"></div>
+                            <div class="space-50 d-md-none"></div>
                         </div>
                     </div>
                 </header>
@@ -27,7 +31,7 @@
         <div class="container-fluid">
             <div class="container">
                 <!-- breadcrumbs -->
-                <section style="margin-left: -0.7em;">
+                <section>
                     <div class="space-30"></div>
                     <app-breadcrumbs></app-breadcrumbs>
                     <div class="space-30"></div>
@@ -139,12 +143,12 @@
                 </section>
                 <!-- end section -->
                 <!-- mobile section -->
-                <section class="d-lg-none">
+                <section class="d-lg-none m-global">
                     <div class="row text-center">
                         <div class="col-12 text-center">
                             <mat-card class="card-theme wow slideInUp">
                                 <mat-card-header>
-                                    <mat-card-title class="case-title se-title x-m">
+                                    <mat-card-title class="case-title se-title x-m-short">
                                         Impacto
                                     </mat-card-title>
                                     <div class="space-30"></div>
@@ -180,7 +184,7 @@
                                             Abordamos ésta materia multidisciplinariamente:
                                         </p>
                                         <!-- items -->
-                                        <mat-nav-list style="margin-left: -12%;" role="navigation">
+                                        <mat-nav-list class="list-m-global" role="navigation">
                                             <mat-list-item>
                                                 <mat-icon matListIcon>keyboard_arrow_right</mat-icon>
                                                 <h3 class="atech-line-item" matLine>Medición de huella <br> de carbono.</h3>
@@ -266,7 +270,7 @@
     </div>
 </section>
 <!-- end information -->
-<div class="space-50"></div>
+<div class="space-50 d-none d-md-block"></div>
 <!-- CTA FORM -->
 
 <section style="overflow: hidden;" class="bg-testimonial wow slideInUp">

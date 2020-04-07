@@ -8,16 +8,18 @@
 
 .footerv1-title {
     font-size: 55px;
+    font-family: 'Chivo-Bold', serif !important;
     color: #ffffff;
-    font-family: 'Chivo-Bold', serif;
-    font-weight: bold;
+    text-align: center;
+    padding: 10px;
 }
 
 .footerv1-subtitle {
     font-size: 24px;
     color: #ffffff;
-    font-family: 'Chivo-Light', serif;
+    font-family: 'Chivo-Light', serif !important;
     line-height: 1.5;
+    padding: 5px;
 }
 
 .atech-field {
@@ -115,7 +117,7 @@ position: relative; left: 20%;
         font-family: 'Chivo-Bold', serif !important;
         color: #ffffff;
         text-align: center;
-        line-height: 1.4;
+        line-height: 1.2;
         padding: 10px;
     }
     .footerv1-subtitle {
@@ -127,6 +129,15 @@ position: relative; left: 20%;
         padding: 5px;
     }
     .w-form {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+    .w-form {
+        width: 100%;
+    }
+    .size-auto {
         width: 100%;
     }
 }

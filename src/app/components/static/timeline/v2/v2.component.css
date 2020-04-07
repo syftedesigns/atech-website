@@ -1,0 +1,78 @@
+.atech-stepper-title {
+    font-family: 'Chivo-Black', serif;
+    font-weight: lighter;
+    font-size: 18px;
+    color: #5B5B5C;
+}
+
+.label-parent {
+    font-family: 'Chivo-Regular', serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #056DFF
+}
+
+.icon-stepper-tab {
+    color: #056DFF;
+    font-weight: bold;
+    /*position: relative;
+    left: 0;*/
+    /*margin-left: 100%;*/
+}
+
+.stepper-card-content {
+    color: #5B5B5C;
+    font-size: 14px;
+    font-family: 'Chivo-Regular', Arial, Helvetica, sans-serif !important;
+    text-align: left;
+    line-height: 1.5;
+}
+
+mat-card {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+@media only screen and (max-width: 320px) {
+    .margin-icon-step-1 {
+        margin-left: 1%;
+        /*+6%*/
+    }
+    .margin-icon-step-2 {
+        margin-left: -0.15em;
+    }
+    .margin-icon-step-3 {
+        margin-left: -0.050em !important;
+    }
+    .margin-icon-step-4 {
+        margin-left: 14.80% !important;
+    }
+    .margin-icon-step-5 {
+        margin-left: 0.35% !important;
+    }
+    .margin-icon-step-6 {
+        margin-left: 0%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .margin-icon-step-1 {
+        margin-left: 5%;
+        /*+6%*/
+    }
+    /*.margin-icon-step-2 {
+        margin-left: -0.5em;
+    }*/
+    .margin-icon-step-3 {
+        margin-left: 0.030em;
+    }
+    .margin-icon-step-4 {
+        margin-left: 15.50%;
+    }
+    .margin-icon-step-5 {
+        margin-left: 0.35%;
+    }
+    .margin-icon-step-6 {
+        margin-left: 11.45%;
+    }
+}

@@ -48,6 +48,50 @@ figure {
     font-family: 'Chivo-Bold', Lato !important;
 }
 
+@media only screen and (max-width: 320px) {
+    .overlay-content a {
+        font-size: 24px !important;
+        margin-top: 1em !important;
+    }
+    .overlay-content {
+        position: relative;
+        top: 1%;
+        /*25*/
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-widtH: 480px) {
+    .overlay-content a {
+        font-size: 35px;
+        margin-top: 0.5em !important;
+    }
+    .overlay-content {
+        position: relative;
+        top: 1%;
+        /*25*/
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .atech-slogan {
+        position: fixed !important;
+        bottom: 0 !important;
+        left: 0;
+        right: 0;
+        z-index: 1000 !important;
+    }
+}
+
+@media only screen and (min-height: 700px) and (max-width: 480px) {
+    .overlay-content a {
+        font-size: 35px;
+        margin-top: 1em !important;
+    }
+}
+
 .overlay a:hover,
 .overlay a:focus {
     /*color: #f1f1f1;*/
@@ -76,5 +120,27 @@ figure {
         font-size: 40px;
         top: 15px;
         right: 35px;
+    }
+}
+
+@media only screen and (min-width: 980px) and (max-height: 720px) {
+    .overlay-content {
+        position: relative;
+        top: 1%;
+        /*25*/
+        width: 100%;
+        text-align: center;
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (min-width: 980px) and (max-height: 800px) {
+    .overlay-content {
+        position: relative;
+        top: 1%;
+        /*25*/
+        width: 100%;
+        text-align: center;
+        margin-top: 0px;
     }
 }

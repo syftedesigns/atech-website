@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ViewChild, ViewChildren, QueryList } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild, ViewChildren, QueryList, ElementRef } from '@angular/core';
 import { MatVerticalStepper, MatStep } from '@angular/material/stepper';
 
 @Component({
@@ -8,8 +8,10 @@ import { MatVerticalStepper, MatStep } from '@angular/material/stepper';
 })
 export class HomeComponent implements OnInit, AfterViewInit {
   @ViewChild(MatVerticalStepper) stepper: MatVerticalStepper;
+  // Patners
 
   // @ViewChild('matStep') step0: ElementRef<MatStep>;
+  // https://github.com/angular/components/issues/15478 - para los timeline de diferente color
   // Alojamos el array de pasos
   @ViewChildren('matStep') componentSteps: QueryList<MatStep[]> | any;
   public DynamicSteps: MatStep[] = [];
@@ -23,7 +25,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
       this.stepper._getIndicatorType = () => 'number'; // Para desactivar el comportamiento de los tabs+
       this.componentSteps.toArray();
       this.DynamicSteps = this.componentSteps._results;
-      console.log(this.DynamicSteps);
+      console.log(this.DynamicSteps[0]);
+      this.DynamicSteps[1].content.elementRef.nativeElement.parentElement.style.background = 'Background-color: orange';
+      // this.DynamicSteps[0].content.elementRef.nativeElement.parentElement.style.background
     }, 500);
   }
 

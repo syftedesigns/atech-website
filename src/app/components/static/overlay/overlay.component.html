@@ -1,5 +1,5 @@
 <div id="myNav" class="overlay">
-    <mat-toolbar class="toolbar-background d-none d-md-block sticky">
+    <mat-toolbar class="toolbar-background sticky">
         <!-- menu -->
         <header>
             <mat-toolbar-row>
@@ -26,7 +26,10 @@
         <a (click)="EventsBeforeNavigation();" [routerLink]="['/innovacion']">Innovación</a>
         <a (click)="EventsBeforeNavigation();" [routerLink]="['/catalogo']">Catálogo</a>
         <div class="space-50"></div>
-        <figure>
+        <figure class="d-none d-md-block">
+            <img src="./assets/images/atech-slogan-logo.png" alt="atechjg-logo-slogan">
+        </figure>
+        <figure style="opacity: 0;" id="atech-slogan" class="atech-slogan d-md-none">
             <img src="./assets/images/atech-slogan-logo.png" alt="atechjg-logo-slogan">
         </figure>
     </div>

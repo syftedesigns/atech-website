@@ -655,6 +655,36 @@ body {
     background-color: #046eff;
 }
 
+.mat-step-header[aria-labelledby="patner"] .mat-step-icon {
+    background-color: #ffffff !important;
+    color: #046eff !important
+}
+
+.mat-step-header[aria-label="Depósito"] .mat-step-icon {
+    background-color: #ffffff !important;
+    color: #046eff !important
+}
+
+.mat-step-header[aria-label="Comercialización"] .mat-step-icon {
+    background-color: #ffffff !important;
+    color: #046eff !important
+}
+
+.mat-step-header[aria-label="Distribución"] .mat-step-icon {
+    background-color: #ffffff !important;
+    color: #046eff !important
+}
+
+.mat-step-header[aria-label="Importación"] .mat-step-icon {
+    background-color: #ffffff !important;
+    color: #046eff !important
+}
+
+.mat-step-header[aria-label="Requerimiento"] .mat-step-icon {
+    background-color: #ffffff !important;
+    color: #046eff !important
+}
+
 .mat-step-label {
     overflow: visible !important;
 }
@@ -713,10 +743,11 @@ input.mat-input-element {
     z-index: -1 !important;
 }
 
-figure {
+
+/*figure {
     -webkit-box-shadow: 0 6px 11px 0 rgba(37, 58, 103, 0.3);
     box-shadow: 0 6px 11px 0 rgba(37, 58, 103, 0.3);
-}
+}*/
 
 .red-snackbar {
     background: rgb(228, 82, 56) !important;
@@ -744,6 +775,26 @@ figure {
 button:focus {
     outline: none;
     border: none;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 480px) {}
+
+@media only screen and (max-width: 480px) {
+    .m-global {
+        margin-top: -15%;
+    }
+    .list-m-global {
+        margin-left: -12%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .m-global {
+        margin-top: -5%;
+    }
+    .list-m-global {
+        margin-left: -1%;
+    }
 }
 
 

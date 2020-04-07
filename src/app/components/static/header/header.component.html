@@ -4,7 +4,7 @@
         <mat-toolbar-row>
             <!-- logo -->
             <a class="navbar-brand" [routerLink]="['/']">
-                <img width="180" class="offset-lg-2 offset-md-1 offset-xl-8" src="./assets/images/atech-logo-final.png" alt="atechjg-logo">
+                <img width="160" class="offset-lg-2 offset-md-1 offset-xl-8" src="./assets/images/atech-logo-final.png" alt="atechjg-logo">
             </a>
             <!-- end logo-->
             <span class="example-spacer"></span>
@@ -19,7 +19,7 @@
             </form>-->
             <!-- Finalizar busqueda de catalogo-->
             <!-- Desplegar menu -->
-            <button (click)="ToggleMenu();" mat-button>
+            <button (click)="ToggleMenu(true);" mat-button>
                 <mat-icon class="primary-color"  aria-hidden="false" aria-label="button menu">menu</mat-icon>
             </button>
             <!-- fin menu -->
@@ -31,11 +31,10 @@
 <app-overlay></app-overlay>
 <!-- end overlay -->
 <!-- sticky menu -->
-<header style="display: none !important" class="d-none d-md-block" *ngIf="sticky && SticketBubble" [ngClass]="{'menu-sticky': sticky}">
+<!--<header style="display: none !important" class="d-none d-md-block" *ngIf="sticky && SticketBubble" [ngClass]="{'menu-sticky': sticky}">
     <div class="container">
         <div class="row">
             <div class="col-sm text-center">
-                <!-- ToggleMenu(true); -->
                 <figure>
                     <button (click)="ToggleMenu(true)" mat-fab class="bg-sticky">
                     <mat-icon class="material-icons">menu</mat-icon>
@@ -44,17 +43,17 @@
             </div>
         </div>
     </div>
-</header>
+</header>-->
 <!-- end sticky -->
 <!-- menu mobile -->
 <mat-toolbar [ngClass]="{'z-inditex': !parentMenu.menuIsOpen}" class="toolbar-background d-md-none sticky">
     <header #stickyMenu>
         <mat-toolbar-row [ngClass]="{'m-1em': !stickyMobile, 'm-0em' : stickyMobile}">
             <a class="navbar-brand" [routerLink]="['/']">
-                <img width="160" src="./assets/images/atech-logo-final.png" alt="atechjg-logo">
+                <img width="140" src="./assets/images/atech-logo-final.png" alt="atechjg-logo">
             </a>
             <span class="example-spacer"></span>
-            <button [matMenuTriggerFor]="menu" mat-button>
+            <button (click)="ToggleMenu(true)" mat-button>
                 <mat-icon class="material-icons primary-color"  aria-hidden="false" aria-label="button menu">menu</mat-icon>
             </button>
         </mat-toolbar-row>

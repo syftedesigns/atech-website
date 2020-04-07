@@ -1,19 +1,22 @@
 <div class="main">
     <div class="container-fluid">
         <div class="container">
-            <div class="space-100"></div>
+            <div class="space-80 d-none d-md-block"></div>
+            <div class="space-30 d-md-none"></div>
             <div class="row">
                 <div class="col text-center">
                     <h1 class="footerv1-title" [innerHTML]="titleFooter"></h1>
-                    <div class="space-30"></div>
-                    <div class="spacer"></div>
-                    <div class="space-30 d-none d-md-block"></div>
+                    <section class="d-none d-md-block">
+                        <div class="space-30"></div>
+                        <div class="spacer"></div>
+                        <div class="space-30 d-none d-md-block"></div>
+                    </section>
                     <h3 class="footerv1-subtitle">
                         ¿Crees que Atech puede resultar de utilidad para tu negocio? <br class="d-none d-lg-block"> Déjanos algunos datos básicos y nos pondremos en contacto
                     </h3>
                 </div>
             </div>
-            <div class="space-30"></div>
+            <div class="space-30 d-none d-md-block"></div>
             <!-- start form v3 -->
             <form (ngSubmit)="SendAtechForm(atechForm);" ngNativeValidate #atechForm="ngForm">
                 <div class="form-row text-center">
@@ -65,7 +68,7 @@
                         </mat-hint>
                     </div>
                 </div>
-                <div class="space-60"></div>
+                <div class="space-60 d-none d-md-block"></div>
             </form>
             <!-- end form v3-->
         </div>

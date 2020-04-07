@@ -1,6 +1,7 @@
-.bg-catalogo {
-    background-image: url(../../../assets/images/banner-catalogo.jpg);
+.bg-innovacion {
+    background-image: url(../../../assets/images/banner-atech-catalogo.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .bg-color-catalogo {

@@ -5,16 +5,20 @@
                 <header>
                     <div class="row">
                         <div class="col text-center">
-                            <div class="space-160"></div>
-                            <!-- header and subheader here-->
-                            <h3 class="title-primary top-m">
-                                En buenas manos
-                            </h3>
-                            <h1 class="title-secondary">
-                                Su producción respaldada <br> por nuestra garantía.
-                            </h1>
-                            <div class="space-200"></div>
-                            <div class="space-30"></div>
+                            <div class="space-160 d-none d-md-block"></div>
+                            <div class="space-60 d-md-none"></div>
+                            <div class="space-30 d-none d-lg-block"></div>
+                            <section class="title-mobile-m">
+                                <!-- header and subheader here-->
+                                <h3 class="title-primary top-m">
+                                    En buenas manos
+                                </h3>
+                                <h1 class="title-secondary">
+                                    Su producción respaldada <br> por nuestra garantía.
+                                </h1>
+                            </section>
+                            <div class="space-160 d-none d-md-block"></div>
+                            <div class="space-50 d-md-none"></div>
                         </div>
                     </div>
                 </header>
@@ -28,7 +32,7 @@
         <div class="container-fluid">
             <div class="container">
                 <!-- breadcrumbs -->
-                <section style="margin-left: -0.7em;">
+                <section>
                     <div class="space-30"></div>
                     <app-breadcrumbs></app-breadcrumbs>
                     <div class="space-30"></div>
@@ -43,8 +47,8 @@
                             </figure>
                         </div>
                         <div class="block-text col-5 wow slideInLeft">
+                            <h3 class="case-title">Selección de proveedores:</h3>
                             <article class="case-text">
-                                <div class="space-20"></div>
                                 <p>
                                     Contamos con una amplia cartera de proveedores cuidadosamente seleccionados, basándonos en auditorías que cubren siete pilares:
                                 </p>
@@ -185,7 +189,7 @@
                 </section>
                 <!-- end section -->
                 <!-- mobile section -->
-                <section class="d-lg-none">
+                <section class="d-lg-none m-global">
                     <div class="row text-left">
                         <div class="col-12 text-center">
                             <mat-card class="card-theme wow slideInUp">
@@ -204,7 +208,7 @@
                                             Contamos con una amplia cartera de proveedores cuidadosamente seleccionados, basándonos en auditorías que cubren siete pilares:
                                         </p>
                                         <!-- items -->
-                                        <mat-nav-list style="margin-left: -12%;" role="navigation">
+                                        <mat-nav-list class="list-m-global" role="navigation">
                                             <mat-list-item>
                                                 <mat-icon matListIcon>keyboard_arrow_right</mat-icon>
                                                 <h3 class="atech-line-item" matLine>Perfil de la compañía</h3>
@@ -244,7 +248,7 @@
                             <div class="space-30"></div>
                             <mat-card class="card-theme wow slideInUp">
                                 <mat-card-header>
-                                    <mat-card-title class="case-title se-title x-m">
+                                    <mat-card-title class="case-title se-title x-m-short">
                                         Auditorías
                                     </mat-card-title>
                                     <div class="space-30"></div>
@@ -288,7 +292,7 @@
                                         <p>
                                             Al finalizar una producción se hace un control sobre siete puntos clave:
                                         </p>
-                                        <mat-nav-list style="margin-left: -12%;" role="navigation">
+                                        <mat-nav-list class="list-m-global" role="navigation">
                                             <mat-list-item>
                                                 <mat-icon matListIcon>keyboard_arrow_right</mat-icon>
                                                 <h3 class="atech-line-item" matLine>Cantidades</h3>
@@ -332,7 +336,7 @@
                             <div class="space-30"></div>
                             <mat-card class="card-theme wow slideInUp">
                                 <mat-card-header>
-                                    <mat-card-title class="case-title se-title x-m">
+                                    <mat-card-title class="case-title se-title x-m-short">
                                         Procesos
                                     </mat-card-title>
                                     <div class="space-30"></div>
@@ -359,7 +363,7 @@
     </div>
 </section>
 <!-- end information -->
-<div class="space-50"></div>
+<div class="space-50 d-none d-md-block"></div>
 <!-- CTA FORM -->
 <section style="overflow: hidden;" class="bg-testimonial wow slideInUp">
     <app-footerv3 [titleFooter]="HTML_FOOTER_TITLE"></app-footerv3>

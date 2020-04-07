@@ -1,7 +1,8 @@
 <div class="main">
     <div class="container-fluid">
         <div class="container">
-            <div class="space-100"></div>
+            <div class="space-80 d-none d-md-block"></div>
+            <div class="space-30 d-md-none"></div>
             <div class="row">
                 <div class="col text-center">
                     <h1 class="footerv1-title">
@@ -18,7 +19,7 @@
                 </div>
             </div>
             <!-- form here -->
-            <div class="space-30"></div>
+            <div class="space-30 d-none d-md-block"></div>
             <form (ngSubmit)="SendAtechForm(atechForm);" ngNativeValidate #atechForm="ngForm" id="touchform" class="d-none d-lg-block">
                 <div class="form-row text-center">
                     <div class="col">
@@ -199,7 +200,7 @@
                                 </mat-hint>
                             </div>
                         </div>
-                        <div class="space-60"></div>
+                        <div class="space-60 d-none d-md-block"></div>
                     </div>
                 </div>
             </form>

@@ -21,15 +21,15 @@
                 <p class="atech-paragraph">
                     Integramos la cadena de suministro verticalmente <br> para conectar cada punto, con eficiencia y sostenibilidad, <br> gestionando de principio a fin, una solución integral.
                 </p>
-                <div class="space-80"></div>
+                <div class="space-20"></div>
                 <!--<div class="text-center">
-                    <button class="btn-view-more btn-block" mat-stroked-button>
-                        Ver más
-                    </button>
-                </div>-->
+                        <button class="btn-view-more btn-block" mat-stroked-button>
+                            Ver más
+                        </button>
+                    </div>-->
                 <div class="space-20"></div>
                 <!-- counter items -->
-                <div class="row text-center offset-1">
+                <div class="row text-center offset-lg-1">
                     <div class="col">
                         <mat-card class="atech-counter-box">
                             <mat-card-header>
@@ -84,7 +84,7 @@
                 <p class="atech-paragraph">
                     Integramos la cadena de suministro verticalmente <br> para conectar cada punto, con eficiencia y sostenibilidad, <br> gestionando de principio a fin, una solución integral.
                 </p>
-                <div class="space-50"></div>
+                <div class="space-10"></div>
                 <!-- counter items -->
                 <div class="row text-center x-mg">
                     <div class="col">
@@ -100,9 +100,8 @@
                             </mat-card-header>
                         </mat-card>
                     </div>
-                    <div class="space-15"></div>
                     <div class="col">
-                        <mat-card class="atech-counter-box">
+                        <mat-card style="position: relative; top: -2em" class="atech-counter-box">
                             <mat-card-header>
                                 <mat-card-title>
                                     <h1 style="position: relative; left: 0.1em;" class="counter">60+</h1>
@@ -114,9 +113,8 @@
                             </mat-card-header>
                         </mat-card>
                     </div>
-                    <div class="space-15"></div>
                     <div class="col">
-                        <mat-card class="atech-counter-box">
+                        <mat-card style="position: relative; top: -2em" class="atech-counter-box">
                             <mat-card-header>
                                 <mat-card-title>
                                     <h1 class="counter">20M+</h1>
@@ -129,7 +127,6 @@
                         </mat-card>
                     </div>
                 </div>
-                <div class="space-15"></div>
                 <!-- end counter items -->
             </div>
             <!-- end mobile -->
@@ -139,12 +136,12 @@
 <!-- end branding section-->
 <!-- timeline section -->
 <section style="overflow: hidden;" class="d-none d-lg-block wow slideInUp">
-    <div class="space-100"></div>
+    <div class="space-50"></div>
     <div class="container-fluid">
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h3 class="text-left">
+                    <h3 style="position: relative; top: 2.5em" class="text-left">
                         02. ¿Cómo?
                     </h3>
                     <div class="row atech-stepper-header">
@@ -158,7 +155,7 @@
                     <!-- stepper -->
                     <mat-vertical-stepper #parentStepper (selectionChange)="stepperEventNode($event);" class="text-center atech-stepper">
                         <!-- Label inversos -->
-                        <mat-step #matStep state="phone" completed="true">
+                        <mat-step #matStep aria-labelledby="patner" state="phone" completed="true">
                             <ng-template matStepLabel>
                                 <mat-hint class="label-parent label-position">
                                     Requerimiento
@@ -362,7 +359,7 @@
                         </mat-step>
                         <!-- end step desplegable -->
                         <!-- Label inversos -->
-                        <mat-step #matStep state="phone" completed="true">
+                        <mat-step #matStep aria-labelledby="patner" state="phone" completed="true">
                             <ng-template matStepLabel>
                                 <mat-hint class="label-parent label-position8">
                                     Importación
@@ -371,7 +368,7 @@
                         </mat-step>
                         <!-- end label inverso -->
                         <!-- Label inversos -->
-                        <mat-step #matStep state="phone" completed="true">
+                        <mat-step #matStep aria-labelledby="patner" state="phone" completed="true">
                             <ng-template matStepLabel>
                                 <mat-hint class="label-parent label-position9">
                                     Depósito
@@ -380,7 +377,7 @@
                         </mat-step>
                         <!-- end label inverso -->
                         <!-- Label inversos -->
-                        <mat-step #matStep state="phone" completed="true">
+                        <mat-step aria-labelledby="patner" #matStep state="phone" completed="true">
                             <ng-template matStepLabel>
                                 <mat-hint class="label-parent label-position10">
                                     Distribución
@@ -389,7 +386,7 @@
                         </mat-step>
                         <!-- end label inverso -->
                         <!-- Label inversos -->
-                        <mat-step #matStep state="phone" completed="true">
+                        <mat-step #matStep aria-labelledby="patner" state="phone" completed="true">
                             <ng-template matStepLabel>
                                 <mat-hint class="label-parent label-position11">
                                     Comercialización
@@ -409,8 +406,13 @@
     </div>
 </section>
 <!-- end timeline-->
+<!-- timeline mobile -->
+<section style="overflow: hidden;" class="d-md-none wow slideInUp">
+    <app-v2></app-v2>
+</section>
+<!-- end timeline mobile -->
 <!-- Banner slider coming -->
-<div class="space-80"></div>
+<div class="space-80 d-none d-md-block"></div>
 <section class="bg-testimonial wow slideInUp">
     <app-banner></app-banner>
 </section>
@@ -427,12 +429,11 @@
 <!-- end map mobile -->
 
 <!-- cases overview -->
-<div class="space-120 d-none d-lg-block"></div>
+<div class="space-5 d-none d-lg-block"></div>
 <div class="space-50 d-lg-none"></div>
-<section>
+<section class="cases-m">
     <app-casesv2></app-casesv2>
 </section>
-<div class="space-30"></div>
 <!-- end cases overview -->
 <!-- footer home -->
 <section style="overflow: hidden;" class="bg-testimonial wow slideInUp">
