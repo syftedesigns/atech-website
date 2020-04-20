@@ -28,7 +28,7 @@
 
 .case-title {
     color: #056DFF;
-    font-size: 28px;
+    font-size: 22px;
     font-family: 'Chivo-Regular', serif;
     font-weight: bold;
     line-height: 1.4;
@@ -176,12 +176,12 @@ mat-list-item {
         padding: 10px;
     }
     .title-primary {
-        font-size: 20px;
+        font-size: 14.5px;
         font-family: 'Chivo-Light', serif !important;
         color: #ffffff;
         text-align: center;
         line-height: 1.5;
-        padding: 5px;
+        padding: 1px;
     }
     .atech-line-item {
         color: #5B5B5C;

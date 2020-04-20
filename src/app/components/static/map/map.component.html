@@ -29,7 +29,7 @@
         <mgl-marker #Spain [lngLat]="[2.169920, 41.387920]">
             <mat-icon class="material-icons atech-marker">place</mat-icon>
         </mgl-marker>
-        <mgl-popup [marker]="Spain" [anchor]="'top'">
+        <mgl-popup [marker]="Spain" [anchor]="'top'" [offset]="15">
             <mat-card class=" w-100 popup-card">
                 <mat-card-header>
                     <span mat-card-avatar>
@@ -54,15 +54,15 @@
         <mgl-marker #China [lngLat]="[114.057861, 22.543097]">
             <mat-icon style="margin-top: -0.8em !important;" class="material-icons atech-marker">place</mat-icon>
         </mgl-marker>
-        <mgl-popup [marker]="China" [anchor]="'right'">
+        <mgl-popup [marker]="China" [anchor]="'right'" [offset]="25">
             <mat-card class="w-100 popup-card">
                 <mat-card-header>
                     <span mat-card-avatar>
-                        <img style="margin-left: -1.7em;" src="./assets/images/atech-casa-matriz.png" alt="atech-casa-matriz">
+                        <img style="margin-left: -1.9em;" src="./assets/images/atech-casa-matriz.png" alt="atech-casa-matriz">
                     </span>
                     <mat-card-title>
                         <div class="space-10"></div>
-                        <h1 class="text-center popup-title-colors popup-title">
+                        <h1 class="text-left popup-title-colors popup-title">
                             Casa Matriz
                         </h1>
                     </mat-card-title>

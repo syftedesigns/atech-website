@@ -2,243 +2,245 @@
     <div class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col text-center">
-                    <mat-vertical-stepper #parentStepper (selectionChange)="stepperEventNode($event);" class="text-center atech-stepper">
-                        <!-- Label inversos -->
-                        <mat-step #matStep aria-labelledby="patner" aria-label="Requerimiento" state="phone" completed="true">
-                            <ng-template matStepLabel>
-                                <mat-hint class="label-parent label-position">
-                                    Requerimiento
-                                </mat-hint>
-                            </ng-template>
-                        </mat-step>
-                        <!-- end label inverso -->
-                        <!-- start step desplegable -->
-                        <mat-step #matStep>
-                            <ng-template matStepLabel>
-                                <mat-hint class="label-parent">
-                                    Análisis de mercado
-                                </mat-hint>
-                                <span class="margin-icon-step-1" *ngFor="let item of DynamicSteps; let i = index">
-                                    <mat-hint *ngIf="i === 1">
-                                        <button *ngIf="item.interacted" mat-button matStepperNext>
-                                            <mat-icon class="icon-stepper-tab" matSuffix>
-                                                clear
-                                            </mat-icon>
-                                        </button>
-                                        <button mat-button matStepperNext *ngIf="!item.interacted">
-                                            <mat-icon class="icon-stepper-tab" matSuffix>
-                                                add
-                                            </mat-icon>
-                                        </button>
+                <div class="col text-left">
+                    <section style="position: relative; left: -2em;">
+                        <mat-vertical-stepper #parentStepper (selectionChange)="stepperEventNode($event);" class="text-center atech-stepper">
+                            <!-- Label inversos -->
+                            <mat-step #matStep aria-labelledby="patner" aria-label="Requerimiento" state="phone" completed="true">
+                                <ng-template matStepLabel>
+                                    <mat-hint class="label-parent label-position">
+                                        Requerimiento
                                     </mat-hint>
-                                </span>
-                            </ng-template>
-                            <!-- text below -->
-                            <mat-card class="w-100 atech-counter-box">
-                                <mat-card-content class="stepper-card-content">
-                                    Procesamos los requisitos del proyecto y estudiamos las tendencias de los consumidores y el mercado para ofrecer productos costo eficientes. Asesoramos sobre la industria,competidores y otras variables para determinar la relación entre oferta y demanda
-                                    de un determinado producto y tomar decisiones conscientes respecto a la potencialidad del proyecto.
-                                </mat-card-content>
-                            </mat-card>
-                            <!-- end text below -->
-                        </mat-step>
-                        <!-- end step desplegable -->
-                        <!-- start step desplegable -->
-                        <mat-step #matStep>
-                            <ng-template matStepLabel>
-                                <mat-hint class="label-parent">
-                                    Selección de productos
-                                </mat-hint>
-                                <span class="margin-icon-step-2" *ngFor="let item of DynamicSteps; let i = index">
-                                    <mat-hint *ngIf="i === 2">
-                                        <button *ngIf="item.interacted" mat-button matStepperNext>
-                                            <mat-icon class="icon-stepper-tab" matSuffix>
-                                                clear
-                                            </mat-icon>
-                                        </button>
-                                        <button mat-button matStepperNext *ngIf="!item.interacted">
-                                            <mat-icon class="icon-stepper-tab" matSuffix>
-                                                add
-                                            </mat-icon>
-                                        </button>
+                                </ng-template>
+                            </mat-step>
+                            <!-- end label inverso -->
+                            <!-- start step desplegable -->
+                            <mat-step #matStep>
+                                <ng-template matStepLabel>
+                                    <mat-hint class="label-parent">
+                                        Análisis de mercado
                                     </mat-hint>
-                                </span>
-                            </ng-template>
-                            <!-- text below -->
-                            <mat-card class="w-100 atech-counter-box">
-                                <mat-card-content class="stepper-card-content">
-                                    Nuestra experiencia de más de 13 años en desarrollo de producto en Oriente, nos permite ofrecer las alternativas más competitivas e innovadoras, para asegurar la generación de valor para los clientes y los consumidores finales. Seleccionamos cuidadosamente
-                                    las fábricas mediante exigentes auditorías y ofrecemos un plan de negocios a la medida de cada cliente.
-                                </mat-card-content>
-                            </mat-card>
-                            <!-- end text below -->
+                                    <span class="margin-icon-step-1" *ngFor="let item of DynamicSteps; let i = index">
+                                        <mat-hint *ngIf="i === 1">
+                                            <button *ngIf="item.interacted" mat-button matStepperNext>
+                                                <mat-icon class="icon-stepper-tab" matSuffix>
+                                                    clear
+                                                </mat-icon>
+                                            </button>
+                                            <button mat-button matStepperNext *ngIf="!item.interacted">
+                                                <mat-icon class="icon-stepper-tab" matSuffix>
+                                                    add
+                                                </mat-icon>
+                                            </button>
+                                        </mat-hint>
+                                    </span>
+                                </ng-template>
+                                <!-- text below -->
+                                <mat-card class="atech-counter-box card-mobile-w">
+                                    <mat-card-content class="stepper-card-content">
+                                        Procesamos los requisitos del proyecto y estudiamos las tendencias de los consumidores y el mercado para ofrecer productos costo eficientes. Asesoramos sobre la industria,competidores y otras variables para determinar la relación entre oferta y demanda
+                                        de un determinado producto y tomar decisiones conscientes respecto a la potencialidad del proyecto.
+                                    </mat-card-content>
+                                </mat-card>
+                                <!-- end text below -->
+                            </mat-step>
+                            <!-- end step desplegable -->
+                            <!-- start step desplegable -->
+                            <mat-step #matStep>
+                                <ng-template matStepLabel>
+                                    <mat-hint class="label-parent">
+                                        Selección de productos
+                                    </mat-hint>
+                                    <span class="margin-icon-step-2" *ngFor="let item of DynamicSteps; let i = index">
+                                        <mat-hint *ngIf="i === 2">
+                                            <button *ngIf="item.interacted" mat-button matStepperNext>
+                                                <mat-icon class="icon-stepper-tab" matSuffix>
+                                                    clear
+                                                </mat-icon>
+                                            </button>
+                                            <button mat-button matStepperNext *ngIf="!item.interacted">
+                                                <mat-icon class="icon-stepper-tab" matSuffix>
+                                                    add
+                                                </mat-icon>
+                                            </button>
+                                        </mat-hint>
+                                    </span>
+                                </ng-template>
+                                <!-- text below -->
+                                <mat-card class="atech-counter-box card-mobile-w">
+                                    <mat-card-content class="stepper-card-content">
+                                        Nuestra experiencia de más de 13 años en desarrollo de producto en Oriente, nos permite ofrecer las alternativas más competitivas e innovadoras, para asegurar la generación de valor para los clientes y los consumidores finales. Seleccionamos cuidadosamente
+                                        las fábricas mediante exigentes auditorías y ofrecemos un plan de negocios a la medida de cada cliente.
+                                    </mat-card-content>
+                                </mat-card>
+                                <!-- end text below -->
 
-                        </mat-step>
-                        <!-- end step desplegable -->
-                        <!-- start step desplegable -->
-                        <mat-step #matStep>
-                            <ng-template matStepLabel>
-                                <mat-hint class="label-parent">
-                                    Plan de abastecimiento
-                                </mat-hint>
-                                <span class="margin-icon-step-3" *ngFor="let item of DynamicSteps; let i = index">
-                                    <mat-hint *ngIf="i === 3">
-                                        <button *ngIf="item.interacted" mat-button matStepperNext>
-                                            <mat-icon class="icon-stepper-tab" matSuffix>
-                                                clear
-                                            </mat-icon>
-                                        </button>
-                                        <button mat-button matStepperNext *ngIf="!item.interacted">
-                                            <mat-icon class="icon-stepper-tab" matSuffix>
-                                                add
-                                            </mat-icon>
-                                        </button>
+                            </mat-step>
+                            <!-- end step desplegable -->
+                            <!-- start step desplegable -->
+                            <mat-step #matStep>
+                                <ng-template matStepLabel>
+                                    <mat-hint class="label-parent">
+                                        Plan de abastecimiento
                                     </mat-hint>
-                                </span>
-                            </ng-template>
-                            <!-- text below -->
-                            <mat-card class="w-100 atech-counter-box">
-                                <mat-card-content class="stepper-card-content">
-                                    Entender todos los puntos estratégicos de los procesos de fabricación y logística, nos habilita a actuar con rapidez y eficiencia, para dar respuesta. La planificación táctica y estratégica es pilar de la organización, reduciendo los costos y maximizando
-                                    los tiempos.
-                                </mat-card-content>
-                            </mat-card>
-                            <!-- end text below -->
-                        </mat-step>
-                        <!-- end step desplegable -->
-                        <!-- start step desplegable -->
-                        <mat-step #matStep>
-                            <ng-template matStepLabel>
-                                <mat-hint class="label-parent">
-                                    Branding
-                                </mat-hint>
-                                <span class="margin-icon-step-4" *ngFor="let item of DynamicSteps; let i = index">
-                                    <mat-hint *ngIf="i === 4">
-                                        <button *ngIf="item.interacted" mat-button matStepperNext>
-                                            <mat-icon class="icon-stepper-tab text-short" matSuffix>
-                                                clear
-                                            </mat-icon>
-                                        </button>
-                                        <button mat-button matStepperNext *ngIf="!item.interacted">
-                                            <mat-icon class="icon-stepper-tab text-short" matSuffix>
-                                                add
-                                            </mat-icon>
-                                        </button>
+                                    <span class="margin-icon-step-3" *ngFor="let item of DynamicSteps; let i = index">
+                                        <mat-hint *ngIf="i === 3">
+                                            <button *ngIf="item.interacted" mat-button matStepperNext>
+                                                <mat-icon class="icon-stepper-tab" matSuffix>
+                                                    clear
+                                                </mat-icon>
+                                            </button>
+                                            <button mat-button matStepperNext *ngIf="!item.interacted">
+                                                <mat-icon class="icon-stepper-tab" matSuffix>
+                                                    add
+                                                </mat-icon>
+                                            </button>
+                                        </mat-hint>
+                                    </span>
+                                </ng-template>
+                                <!-- text below -->
+                                <mat-card class="atech-counter-box card-mobile-w">
+                                    <mat-card-content class="stepper-card-content">
+                                        Entender todos los puntos estratégicos de los procesos de fabricación y logística, nos habilita a actuar con rapidez y eficiencia, para dar respuesta. La planificación táctica y estratégica es pilar de la organización, reduciendo los costos y maximizando
+                                        los tiempos.
+                                    </mat-card-content>
+                                </mat-card>
+                                <!-- end text below -->
+                            </mat-step>
+                            <!-- end step desplegable -->
+                            <!-- start step desplegable -->
+                            <mat-step #matStep>
+                                <ng-template matStepLabel>
+                                    <mat-hint class="label-parent">
+                                        Branding
                                     </mat-hint>
-                                </span>
-                            </ng-template>
-                            <!-- text below -->
-                            <mat-card class="w-100 atech-counter-box">
-                                <mat-card-content class="stepper-card-content">
-                                    Diseñamos productos y marcas alineados a la identidad de cada cliente y al espíritu del consumidor final. La mercadería se entrega cuidadosamente empacada lista para ser exhibida,vendida,distribuída o almacenada de forma eficiente con todos los elementos
-                                    necesarios agregados, como etiquetados y códigos de barras, conectando las necesidades del cliente, el importador y el cliente final, dando una solución end to end al empaquetado.
-                                </mat-card-content>
-                            </mat-card>
-                            <!-- end text below -->
-                        </mat-step>
-                        <!-- end step desplegable -->
-                        <!-- start step desplegable -->
-                        <mat-step #matStep>
-                            <ng-template matStepLabel>
-                                <mat-hint class="label-parent">
-                                    Manufactura y calidad
-                                </mat-hint>
-                                <span class="margin-icon-step-5" *ngFor="let item of DynamicSteps; let i = index">
-                                    <mat-hint *ngIf="i === 5">
-                                        <button *ngIf="item.interacted" mat-button matStepperNext>
-                                            <mat-icon class="icon-stepper-tab" matSuffix>
-                                                clear
-                                            </mat-icon>
-                                        </button>
-                                        <button mat-button matStepperNext *ngIf="!item.interacted">
-                                            <mat-icon class="icon-stepper-tab" matSuffix>
-                                                add
-                                            </mat-icon>
-                                        </button>
+                                    <span class="margin-icon-step-4" *ngFor="let item of DynamicSteps; let i = index">
+                                        <mat-hint *ngIf="i === 4">
+                                            <button *ngIf="item.interacted" mat-button matStepperNext>
+                                                <mat-icon class="icon-stepper-tab text-short" matSuffix>
+                                                    clear
+                                                </mat-icon>
+                                            </button>
+                                            <button mat-button matStepperNext *ngIf="!item.interacted">
+                                                <mat-icon class="icon-stepper-tab text-short" matSuffix>
+                                                    add
+                                                </mat-icon>
+                                            </button>
+                                        </mat-hint>
+                                    </span>
+                                </ng-template>
+                                <!-- text below -->
+                                <mat-card class="atech-counter-box card-mobile-w">
+                                    <mat-card-content class="stepper-card-content">
+                                        Diseñamos productos y marcas alineados a la identidad de cada cliente y al espíritu del consumidor final. La mercadería se entrega cuidadosamente empacada lista para ser exhibida, vendida, distribuida o almacenada de forma eficiente con todos los elementos
+                                        necesarios agregados, como etiquetados y códigos de barras, conectando las necesidades del cliente, el importador y el cliente final, dando una solución end to end al empaquetado.
+                                    </mat-card-content>
+                                </mat-card>
+                                <!-- end text below -->
+                            </mat-step>
+                            <!-- end step desplegable -->
+                            <!-- start step desplegable -->
+                            <mat-step #matStep>
+                                <ng-template matStepLabel>
+                                    <mat-hint class="label-parent">
+                                        Manufactura y calidad
                                     </mat-hint>
-                                </span>
-                            </ng-template>
-                            <!-- text below -->
-                            <mat-card class="w-100 atech-counter-box">
-                                <mat-card-content class="stepper-card-content">
-                                    Nuestro equipo confirma todos los detalles para garantizar que se proceda con la producción cumpliendo con las instrucciones y plazos. Gestionamos el flujo de fondos y pagos, ofreciendo alternativas de financiamiento. Los procesos de auditoría de nuestras
-                                    operaciones previamente, durante y finalizada la producción certifican que los productos cumplan todos los requisitos. De la mano de la trazabilidad y la mejora continua, todos nuestros socios descansan en la garantía
-                                    del respaldo de Atech.
-                                </mat-card-content>
-                            </mat-card>
-                            <!-- end text below -->
-                        </mat-step>
-                        <!-- end step desplegable -->
-                        <!-- start step desplegable -->
-                        <mat-step #matStep>
-                            <ng-template matStepLabel>
-                                <mat-hint class="label-parent">
-                                    Logística
-                                </mat-hint>
-                                <span class="margin-icon-step-6" *ngFor="let item of DynamicSteps; let i = index">
-                                    <mat-hint *ngIf="i === 6">
-                                        <button *ngIf="item.interacted" mat-button matStepperNext>
-                                            <mat-icon class="icon-stepper-tab" matSuffix>
-                                                clear
-                                            </mat-icon>
-                                        </button>
-                                        <button mat-button matStepperNext *ngIf="!item.interacted">
-                                            <mat-icon class="icon-stepper-tab" matSuffix>
-                                                add
-                                            </mat-icon>
-                                        </button>
+                                    <span class="margin-icon-step-5" *ngFor="let item of DynamicSteps; let i = index">
+                                        <mat-hint *ngIf="i === 5">
+                                            <button *ngIf="item.interacted" mat-button matStepperNext>
+                                                <mat-icon class="icon-stepper-tab" matSuffix>
+                                                    clear
+                                                </mat-icon>
+                                            </button>
+                                            <button mat-button matStepperNext *ngIf="!item.interacted">
+                                                <mat-icon class="icon-stepper-tab" matSuffix>
+                                                    add
+                                                </mat-icon>
+                                            </button>
+                                        </mat-hint>
+                                    </span>
+                                </ng-template>
+                                <!-- text below -->
+                                <mat-card class="atech-counter-box card-mobile-w">
+                                    <mat-card-content class="stepper-card-content">
+                                        Nuestro equipo confirma todos los detalles para garantizar que se proceda con la producción cumpliendo con las instrucciones y plazos. Gestionamos el flujo de fondos y pagos, ofreciendo alternativas de financiamiento. Los procesos de auditoría de nuestras
+                                        operaciones previamente, durante y finalizada la producción certifican que los productos cumplan todos los requisitos. De la mano de la trazabilidad y la mejora continua, todos nuestros socios descansan en la garantía
+                                        del respaldo de Atech.
+                                    </mat-card-content>
+                                </mat-card>
+                                <!-- end text below -->
+                            </mat-step>
+                            <!-- end step desplegable -->
+                            <!-- start step desplegable -->
+                            <mat-step #matStep>
+                                <ng-template matStepLabel>
+                                    <mat-hint class="label-parent">
+                                        Logística
                                     </mat-hint>
-                                </span>
-                            </ng-template>
-                            <!-- text below -->
-                            <mat-card class="w-100 atech-counter-box">
-                                <mat-card-content class="stepper-card-content">
-                                    Gestionamos la salida física y documental de la mercadería en orígen y destino, garantizando que no se produzcan demoras ni problemas. Solucionamos el tránsito interno, consolidación y desconsolidación de carga en depóstio, tramitación de documentos locales
-                                    e internacionales. Reserva y planificación de fletes internacionales con seguimiento hasta destino de forma costoeficiente y de la forma más amigable con el medioambiente posible. Resolvemos la comunicación, la mediación
-                                    y la documentación cuidando a nuestros socios.
-                                </mat-card-content>
-                            </mat-card>
-                            <!-- end text below -->
-                        </mat-step>
-                        <!-- end step desplegable -->
-                        <!-- Label inversos -->
-                        <mat-step #matStep aria-labelledby="patner" aria-label="Importación" state="phone" completed="true">
-                            <ng-template matStepLabel>
-                                <mat-hint class="label-parent label-position8">
-                                    Importación
-                                </mat-hint>
-                            </ng-template>
-                        </mat-step>
-                        <!-- end label inverso -->
-                        <!-- Label inversos -->
-                        <mat-step #matStep aria-labelledby="patner" aria-label="Depósito" state="phone" completed="true">
-                            <ng-template matStepLabel>
-                                <mat-hint class="label-parent label-position9">
-                                    Depósito
-                                </mat-hint>
-                            </ng-template>
-                        </mat-step>
-                        <!-- end label inverso -->
-                        <!-- Label inversos -->
-                        <mat-step #matStep aria-labelledby="patner" state="phone" aria-label="Distribución" completed="true">
-                            <ng-template matStepLabel>
-                                <mat-hint class="label-parent label-position10">
-                                    Distribución
-                                </mat-hint>
-                            </ng-template>
-                        </mat-step>
-                        <!-- end label inverso -->
-                        <!-- Label inversos -->
-                        <mat-step #matStep aria-labelledby="patner" state="phone" aria-label="Comercialización" completed="true">
-                            <ng-template matStepLabel>
-                                <mat-hint class="label-parent label-position11">
-                                    Comercialización
-                                </mat-hint>
-                            </ng-template>
-                        </mat-step>
-                        <!-- end label inverso -->
-                    </mat-vertical-stepper>
+                                    <span class="margin-icon-step-6" *ngFor="let item of DynamicSteps; let i = index">
+                                        <mat-hint *ngIf="i === 6">
+                                            <button *ngIf="item.interacted" mat-button matStepperNext>
+                                                <mat-icon class="icon-stepper-tab" matSuffix>
+                                                    clear
+                                                </mat-icon>
+                                            </button>
+                                            <button mat-button matStepperNext *ngIf="!item.interacted">
+                                                <mat-icon class="icon-stepper-tab" matSuffix>
+                                                    add
+                                                </mat-icon>
+                                            </button>
+                                        </mat-hint>
+                                    </span>
+                                </ng-template>
+                                <!-- text below -->
+                                <mat-card class="atech-counter-box card-mobile-w">
+                                    <mat-card-content class="stepper-card-content">
+                                        Gestionamos la salida física y documental de la mercadería en origen y destino, garantizando que no se produzcan demoras ni problemas. Solucionamos el tránsito interno, consolidación y desconsolidación de carga en depósito, tramitación de documentos locales
+                                        e internacionales. Reserva y planificación de fletes internacionales con seguimiento hasta destino de forma costo eficiente y de la forma más amigable con el medioambiente posible. Resolvemos la comunicación, la
+                                        mediación y la documentación cuidando a nuestros socios.
+                                    </mat-card-content>
+                                </mat-card>
+                                <!-- end text below -->
+                            </mat-step>
+                            <!-- end step desplegable -->
+                            <!-- Label inversos -->
+                            <mat-step #matStep aria-labelledby="patner" aria-label="Importación" state="phone" completed="true">
+                                <ng-template matStepLabel>
+                                    <mat-hint class="label-parent label-position8">
+                                        Importación
+                                    </mat-hint>
+                                </ng-template>
+                            </mat-step>
+                            <!-- end label inverso -->
+                            <!-- Label inversos -->
+                            <mat-step #matStep aria-labelledby="patner" aria-label="Depósito" state="phone" completed="true">
+                                <ng-template matStepLabel>
+                                    <mat-hint class="label-parent label-position9">
+                                        Depósito
+                                    </mat-hint>
+                                </ng-template>
+                            </mat-step>
+                            <!-- end label inverso -->
+                            <!-- Label inversos -->
+                            <mat-step #matStep aria-labelledby="patner" state="phone" aria-label="Distribución" completed="true">
+                                <ng-template matStepLabel>
+                                    <mat-hint class="label-parent label-position10">
+                                        Distribución
+                                    </mat-hint>
+                                </ng-template>
+                            </mat-step>
+                            <!-- end label inverso -->
+                            <!-- Label inversos -->
+                            <mat-step #matStep aria-labelledby="patner" state="phone" aria-label="Comercialización" completed="true">
+                                <ng-template matStepLabel>
+                                    <mat-hint class="label-parent label-position11">
+                                        Comercialización
+                                    </mat-hint>
+                                </ng-template>
+                            </mat-step>
+                            <!-- end label inverso -->
+                        </mat-vertical-stepper>
+                    </section>
                 </div>
             </div>
         </div>

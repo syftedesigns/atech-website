@@ -10,7 +10,7 @@ import { AtechClientContact } from '../../../classes/client.class';
 })
 export class FooterComponent implements OnInit {
   loading: boolean = false;
-  checkInterest: string[] = [];
+  checkInterest: string[] | any = [];
   constructor(private contact: ContactService) { }
 
   ngOnInit(): void {
@@ -18,13 +18,14 @@ export class FooterComponent implements OnInit {
 
   SendAtechForm(valueFormTicket: NgForm): void {
     if (valueFormTicket.invalid) {
+      console.log(valueFormTicket.value);
       this.contact.openSnackBar('Ha ocurrido un error, por favor inténtalo nuevamente', 'red-snackbar');
       throw new Error('Formulario inválido');
     }
     this.loading = true;
     const atechTicket = new AtechClientContact(valueFormTicket.value.firstname, valueFormTicket.value.lastname,
       valueFormTicket.value.country, valueFormTicket.value.email, valueFormTicket.value.company || '',
-      valueFormTicket.value.phone || '', JSON.stringify(this.checkInterest) || '');
+      valueFormTicket.value.phone || '', this.checkInterest || '');
     this.contact.ContactAtechJG(atechTicket, 'contactHome')
       .subscribe((resp: any): void => {
         if (resp.status) {
@@ -32,6 +33,7 @@ export class FooterComponent implements OnInit {
           valueFormTicket.reset();
           this.loading = false;
         } else {
+          console.log(resp);
           this.contact.openSnackBar('No hemos podido enviar tu mensaje, inténtalo más tarde', 'red-snackbar');
           valueFormTicket.reset();
           this.loading = false;

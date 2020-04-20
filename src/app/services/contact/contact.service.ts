@@ -22,6 +22,7 @@ export class ContactService {
       form.append('email', ticket.email);
       form.append('company', ticket.company);
       form.append('phone', ticket.phone);
+      form.append('interest', ticket.interestOn);
       return this._http.post(url, form).pipe(
         map((resp: any) => {
           return resp;

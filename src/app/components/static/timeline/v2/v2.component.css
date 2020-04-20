@@ -53,6 +53,9 @@ mat-card {
     .margin-icon-step-6 {
         margin-left: 0%;
     }
+    .card-mobile-w {
+        width: 215px !important;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -74,5 +77,8 @@ mat-card {
     }
     .margin-icon-step-6 {
         margin-left: 11.45%;
+    }
+    .card-mobile-w {
+        width: 100%;
     }
 }

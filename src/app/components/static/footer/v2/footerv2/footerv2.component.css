@@ -122,10 +122,13 @@ address {
     .m-offright {
         margin-left: -1.5em !important;
     }
+    .m2-offright {
+        margin-left: -1.5em !important;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
     .footer-desktop-m {
-        margin-left: -8%
+        margin-left: -10.5%
     }
 }

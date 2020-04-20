@@ -109,7 +109,7 @@ figure {
     font-size: 60px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 525px) {
     .overlay {
         overflow-y: auto;
     }
@@ -120,6 +120,32 @@ figure {
         font-size: 40px;
         top: 15px;
         right: 35px;
+    }
+    .overlay-content a {
+        margin-top: -0.1em !important;
+        position: relative;
+        top: -0.5em
+    }
+}
+
+@media only screen and (max-width: 480px) and (min-height: 525px) and (max-height: 575px) {
+    .overlay {
+        overflow-y: auto;
+    }
+    .overlay a {
+        font-size: 30px;
+        padding: 15px;
+        line-height: 1;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    .overlay-content a {
+        margin-top: -0.1em !important;
+        position: relative;
+        top: -0.5em
     }
 }
 
